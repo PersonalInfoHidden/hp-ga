@@ -1,7 +1,8 @@
-import React from "react";
-import punktpålinje from "./../../../public/images/punktpålinje.png";
-import { promises as fs } from "fs";
-import Image from "next/image";
+import React from 'react';
+import punktpålinje from 'publicimagespunktpålinje.png';
+import { promises as fs } from 'fs';
+import Image from 'next/image';
+import { Key } from 'lucide-react';
 
 export interface HPQuestion {
     name: string;
@@ -14,8 +15,8 @@ export interface HPQuestion {
 
 const Question = async () => {
     const file = await fs.readFile(
-        process.cwd() + "/public/ExampleQuestion.json",
-        "utf8"
+        process.cwd() + '/public/ExampleQuestion.json',
+        'utf8'
     );
     const data: HPQuestion | null = JSON.parse(file);
 
@@ -35,30 +36,28 @@ const Question = async () => {
                         height="0"
                         sizes="100vw"
                         style={{
-                            width: "75%",
-                            height: "auto",
-                            borderRadius: "2rem",
+                            width: '75%',
+                            height: 'auto',
+                            borderRadius: '2rem',
                         }}
                         alt="Picture of the author"
                     />
                 </div>
                 <ul className="grid list-none gap-y-2">
                     {data.answers.map((value, index) => (
-                        <>
-                            <li key={index}>
-                                <label className="block h-full border-2 border-primary-foreground rounded has-[:checked]:border-primary has-[:checked]:bg-primary-foreground has-[:checked]:animate-wiggle">
-                                    <input
-                                        defaultChecked={index == 0}
-                                        type="radio"
-                                        name="data-answers"
-                                        className="hidden"
-                                    />
-                                    <h1 className="h-full flex justify-center items-center text-2xl">
-                                        {value}
-                                    </h1>
-                                </label>
-                            </li>
-                        </>
+                        <li key={value}>
+                            <label className="block h-full border-2 border-primary-foreground rounded has-[:checked]:border-primary has-[:checked]:bg-primary-foreground has-[:checked]:animate-wiggle">
+                                <input
+                                    defaultChecked={index == 0}
+                                    type="radio"
+                                    name="data-answers"
+                                    className="hidden"
+                                />
+                                <h1 className="h-full flex justify-center items-center text-2xl">
+                                    {value}
+                                </h1>
+                            </label>
+                        </li>
                     ))}
                 </ul>
                 <div className="col-span-2">
