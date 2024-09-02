@@ -1,8 +1,8 @@
-import React from 'react';
-import punktpålinje from 'publicimagespunktpålinje.png';
-import { promises as fs } from 'fs';
-import Image from 'next/image';
-import { Key } from 'lucide-react';
+import React from "react";
+import punktpålinje from "publicimagespunktpålinje.png";
+import { promises as fs } from "fs";
+import Image from "next/image";
+import { Key } from "lucide-react";
 
 export interface HPQuestion {
     name: string;
@@ -15,8 +15,8 @@ export interface HPQuestion {
 
 const Question = async () => {
     const file = await fs.readFile(
-        process.cwd() + '/public/ExampleQuestion.json',
-        'utf8'
+        process.cwd() + "/public/ExampleQuestion.json",
+        "utf8"
     );
     const data: HPQuestion | null = JSON.parse(file);
 
@@ -25,7 +25,7 @@ const Question = async () => {
     return (
         <div className="flex items-center justify-center">
             <div className="grid grid-cols-2 w-[calc(75%+12rem)]">
-                <div className="text-center col-span-2 text-8xl py-4 mb-12 mt-6">
+                <div className="text-center col-span-2 md:text-2xl text-8xl py-4 mb-12 mt-6">
                     {data.name}
                 </div>
                 <div className="col-span-2 md:col-span-1 place-content-center flex justify-center items-center border border-primary-foreground">
@@ -36,9 +36,9 @@ const Question = async () => {
                         height="0"
                         sizes="100vw"
                         style={{
-                            width: '75%',
-                            height: 'auto',
-                            borderRadius: '2rem',
+                            width: "75%",
+                            height: "auto",
+                            borderRadius: "2rem",
                         }}
                         alt="Picture of the author"
                     />
@@ -61,9 +61,9 @@ const Question = async () => {
                     ))}
                 </ul>
                 <div className="col-span-2">
-                    <div>
-                        <button type="submit">oooo</button>
-                    </div>
+                    <button type="submit" className="w-full ">
+                        oooo
+                    </button>
                 </div>
             </div>
         </div>

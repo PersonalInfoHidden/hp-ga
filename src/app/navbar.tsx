@@ -1,3 +1,4 @@
+import { Nav } from "@/components/nav";
 import Link from "next/link";
 import path from "path";
 import React from "react";
@@ -15,7 +16,7 @@ export const NavBar = ({
     links: Array<Links>;
 }) => {
     return (
-        <div>
+        <div className="flex">
             {links.map((value, index) => (
                 <Nav path={value.path} key={index}>
                     {value.name}
@@ -23,19 +24,5 @@ export const NavBar = ({
             ))}
             {children}
         </div>
-    );
-};
-
-const Nav = ({
-    children,
-    path,
-}: {
-    children?: React.ReactNode;
-    path: string;
-}) => {
-    return (
-        <nav>
-            <Link href={path}>{children}</Link>
-        </nav>
     );
 };
