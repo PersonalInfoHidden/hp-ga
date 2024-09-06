@@ -16,6 +16,10 @@ const links: Array<Links> = [
         name: "Example 1",
         path: "/example1",
     },
+    {
+        name: "Example 2",
+        path: "/example2",
+    },
 ];
 export default function RootLayout({
     children,

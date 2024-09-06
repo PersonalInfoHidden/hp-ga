@@ -16,7 +16,9 @@ export const Nav = ({
         <nav>
             <Link
                 href={path}
-                className={`font-${isCurrentPath ? "bold" : "normal"}`}
+                className={`font-semibold text-sm ${
+                    isCurrentPath ? " text-primary" : " text-muted-foreground"
+                }`}
             >
                 {children}
             </Link>
