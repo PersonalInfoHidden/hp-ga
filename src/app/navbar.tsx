@@ -41,8 +41,13 @@ export const NavBar = ({
                     {children}
                 </div>
             </div>
-            <div className={`${isBasePath ? "block" : ""} md:hidden`}>
-                <FontAwesomeIcon icon={faChevronLeft} />
+            <div className={`${!isBasePath ? "block" : "hidden"} md:hidden`}>
+                <Link href={"/"}>
+                    <FontAwesomeIcon
+                        icon={faChevronLeft}
+                        className="size-8 my-2 pr-3"
+                    />
+                </Link>
             </div>
         </>
     );

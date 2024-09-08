@@ -1,38 +1,29 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import punktpålinje from "publicimagespunktpålinje.png";
-import { promises as fs } from "fs";
 import Image from "next/image";
-import { Key } from "lucide-react";
+import { HPQuestion } from "./page";
 
-export interface HPQuestion {
-    name: string;
-    id: number;
-    question_text: string;
-    image_path: string;
-    correct_answer: number;
-    answers: string[];
-}
-
-const Question = async () => {
-    const file = await fs.readFile(
-        process.cwd() + "/public/ExampleQuestion.json",
-        "utf8"
+const Question = ({ question }: { question: HPQuestion }) => {
+    const [currentAnswer, setCurrentAnswer] = useState<string>(
+        question.answers[0]
     );
-    const data: HPQuestion | null = JSON.parse(file);
-
-    if (data === null) return <div></div>;
-
+    const [lockedAnwer, setLockedAnwer] = useState<boolean>(false);
     return (
         <div className="flex items-center justify-center">
             <div className="grid grid-cols-2 gap-y-1 w-[calc(75%+12rem)]">
-                <div className="text-center col-span-2 text-2xl md:text-8xl py-4 md:mb-12 mt-6">
-                    {data.name}
+                <div className="text-center col-span-2 text-3xl md:text-8xl py-2 md:ont-semibold">
+                    {question.name}
+                </div>
+                <div className="col-span-2 mx-3">
+                    <p className="text-2xl">{question.question_text}</p>
                 </div>
                 <div className="col-span-2 md:col-span-1 place-content-center flex justify-center items-center border border-primary-foreground">
                     <Image
                         src={`/images/punktpålinje.png`}
                         width="0"
-                        className="mx-8 my-8"
+                        className="m-6 md:mx-8 md:my-8"
                         height="0"
                         sizes="100vw"
                         style={{
@@ -41,10 +32,11 @@ const Question = async () => {
                             borderRadius: "2rem",
                         }}
                         alt="Picture of the author"
+                        priority={false}
                     />
                 </div>
                 <ul className="grid list-none gap-y-2 col-span-2 md:col-span-1 px-4 md:px-0">
-                    {data.answers.map((value, index) => (
+                    {question.answers.map((value, index) => (
                         <li key={value}>
                             <label className="block h-full border-2 border-primary-foreground py-2 rounded-lg has-[:checked]:border-primary has-[:checked]:bg-primary-foreground has-[:checked]:animate-wiggle">
                                 <input
@@ -52,18 +44,24 @@ const Question = async () => {
                                     type="radio"
                                     name="data-answers"
                                     className="hidden"
+                                    onChange={() => {
+                                        setCurrentAnswer(value);
+                                    }}
                                 />
-                                <h1 className="h-full flex justify-center items-center text-2xl">
+                                <h1 className="h-full flex justify-center items-center text-2xl md:text-xl">
                                     {value}
                                 </h1>
                             </label>
                         </li>
                     ))}
                 </ul>
-                <div className="col-span-2">
+                <div className="col-span-2 py-2 grid place-items-center">
                     <button
                         type="submit"
-                        className="w-full uppercase bg-amber-500 py-6 font-semibold"
+                        className="uppercase text-lg bg-amber-500 py-4 font-semibold border-4 border-amber-200 mx-3 my-2 w-11/12 rounded-lg hover:bg-amber-300 hover:border-amber-500"
+                        onClick={() => {
+                            console.log(currentAnswer);
+                        }}
                     >
                         Check
                     </button>
