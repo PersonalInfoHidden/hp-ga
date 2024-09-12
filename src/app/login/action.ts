@@ -1,12 +1,12 @@
-'use server'
+"use server";
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
 import { createClient } from "@/utils/supabase/server";
-import { isEmail, normalizeEmail } from "validator"
+import { isEmail, normalizeEmail } from "validator";
 
-export default async function login(formData: FormData) {
+export default async function login(state: any, formData: FormData) {
   const supabase = createClient();
 
   var email = formData.get("email") as string;
@@ -14,11 +14,17 @@ export default async function login(formData: FormData) {
   if (!isEmail(email)) {
     // Tell user that their email is invalid
     //TODO FIXME
-    redirect("/error");
+    return {
+      emailError: "Your email is invalid, just like you",
+      loginError: "",
+    };
   }
 
   if (!normalizeEmail(email)) {
-    redirect("/error");
+    return {
+      emailError: "Your email could not be normalized",
+      loginError: "",
+    };
   }
   email = normalizeEmail(email) as string;
 
@@ -30,6 +36,12 @@ export default async function login(formData: FormData) {
   const { error } = await supabase.auth.signInWithPassword(data);
 
   if (error) {
+    if (error.code === "invalid_credentials") {
+      return {
+        emailError: "",
+        loginError: "Your credentials are invalid",
+      };
+    }
     redirect("/error");
   }
 
