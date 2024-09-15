@@ -21,7 +21,7 @@ export default async function Page() {
     if (data === null) return <div></div>;
 
     return (
-        <div className="min-h-screen">
+        <div>
             <Question question={data} />
         </div>
     );

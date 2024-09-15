@@ -5,11 +5,18 @@ import punktpålinje from "publicimagespunktpålinje.png";
 import Image from "next/image";
 import { HPQuestion } from "./page";
 
+enum AnswerState {
+    Incomplete,
+    Incorrect,
+    Correct,
+}
+
 const Question = ({ question }: { question: HPQuestion }) => {
-    const [currentAnswer, setCurrentAnswer] = useState<string>(
-        question.answers[0]
+    const [currentAnswerId, setCurrentAnswerId] = useState<number>(1);
+    const [lockedAnswer, setLockedAnswer] = useState<boolean>(false);
+    const [correctlyAnswered, setCorrectlyAnswered] = useState<AnswerState>(
+        AnswerState.Incomplete
     );
-    const [lockedAnwer, setLockedAnwer] = useState<boolean>(false);
     return (
         <div className="flex items-center justify-center">
             <div className="grid grid-cols-2 gap-y-1 w-[calc(75%+12rem)]">
@@ -23,7 +30,7 @@ const Question = ({ question }: { question: HPQuestion }) => {
                     <Image
                         src={`/images/punktpålinje.png`}
                         width="0"
-                        className="m-6 md:mx-8 md:my-8"
+                        className="m-2 md:mx-8 md:my-8"
                         height="0"
                         sizes="100vw"
                         style={{
@@ -38,16 +45,28 @@ const Question = ({ question }: { question: HPQuestion }) => {
                 <ul className="grid list-none gap-y-2 col-span-2 md:col-span-1 px-4 md:px-0">
                     {question.answers.map((value, index) => (
                         <li key={value}>
-                            <label className="block h-full border-2 border-primary-foreground py-2 rounded-lg has-[:checked]:border-primary has-[:checked]:bg-primary-foreground has-[:checked]:animate-wiggle">
+                            <label
+                                className={`block h-full border-2 border-primary-foreground py-4 rounded-lg has-[:checked]:border-primary has-[:checked]:bg-primary-foreground  ${
+                                    correctlyAnswered === AnswerState.Correct
+                                        ? "has-[:checked]:border-green-600  has-[:checked]:animate-bounce"
+                                        : correctlyAnswered ===
+                                          AnswerState.Incorrect
+                                        ? "has-[:checked]:border-red-600"
+                                        : "has-[:checked]:animate-wiggle"
+                                }`}
+                            >
                                 <input
                                     defaultChecked={index == 0}
                                     type="radio"
                                     name="data-answers"
                                     className="hidden"
                                     onChange={() => {
-                                        setCurrentAnswer(value);
+                                        setCurrentAnswerId(index + 1);
+                                        console.log(question.correct_answer);
                                     }}
+                                    disabled={lockedAnswer}
                                 />
+
                                 <h1 className="h-full flex justify-center items-center text-2xl md:text-xl">
                                     {value}
                                 </h1>
@@ -58,9 +77,18 @@ const Question = ({ question }: { question: HPQuestion }) => {
                 <div className="col-span-2 py-2 grid place-items-center">
                     <button
                         type="submit"
-                        className="uppercase text-lg bg-amber-500 py-4 font-semibold border-4 border-amber-200 mx-3 my-2 w-11/12 rounded-lg hover:bg-amber-300 hover:border-amber-500"
+                        className="uppercase text-lg bg-amber-500 py-4 font-semibold border-4 border-amber-200 mx-3 my-2 w-11/12 rounded-lg hover:bg-amber-400 hover:border-amber-600 "
                         onClick={() => {
-                            console.log(currentAnswer);
+                            setLockedAnswer(true);
+
+                            setCorrectlyAnswered(
+                                currentAnswerId === question.correct_answer
+                                    ? AnswerState.Correct
+                                    : AnswerState.Incorrect
+                            );
+                            console.log(
+                                currentAnswerId === question.correct_answer
+                            );
                         }}
                     >
                         Check

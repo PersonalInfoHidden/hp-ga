@@ -8,7 +8,7 @@ const ExampleComponent = ({ children }: { children?: React.ReactNode }) => {
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <main className="flex flex-col items-center justify-between p-24">
             <div className="grid col-span-2">
                 <ExampleComponent>
                     All our base are belong to us
