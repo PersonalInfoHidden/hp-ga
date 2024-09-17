@@ -46,13 +46,13 @@ const Question = ({ question }: { question: HPQuestion }) => {
                     {question.answers.map((value, index) => (
                         <li key={value}>
                             <label
-                                className={`block h-full border-2 border-primary-foreground py-4 rounded-lg has-[:checked]:border-primary has-[:checked]:bg-primary-foreground  ${
+                                className={`block h-full border-2 border-primary-foreground py-4 rounded-lg  has-[:checked]:bg-primary-foreground  ${
                                     correctlyAnswered === AnswerState.Correct
-                                        ? "has-[:checked]:border-green-600  has-[:checked]:animate-bounce"
+                                        ? "has-[:checked]:border-green-600  has-[:checked]:scale-105 transition-transform duration-200 ease-out  has-[:checked]:text-green-200 has-[:checked]:font-bold text-muted"
                                         : correctlyAnswered ===
                                           AnswerState.Incorrect
                                         ? "has-[:checked]:border-red-600"
-                                        : "has-[:checked]:animate-wiggle"
+                                        : "has-[:checked]:border-primary has-[:checked]:animate-wiggle"
                                 }`}
                             >
                                 <input
