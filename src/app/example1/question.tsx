@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import punktpålinje from "publicimagespunktpålinje.png";
 import Image from "next/image";
 import { HPQuestion } from "./page";
@@ -18,6 +18,12 @@ const Question = ({ question }: { question: HPQuestion }) => {
   const [correctlyAnswered, setCorrectlyAnswered] = useState<AnswerState>(
     AnswerState.Incomplete
   );
+  const [startTime, setStartTime] = useState<number>(0);
+  
+  useEffect(() => {
+    setStartTime(Date.now());
+  }, []);
+
   return (
     <div className="flex items-center justify-center">
       <div className="grid grid-cols-2 gap-y-1 w-[calc(75%+12rem)]">
@@ -84,7 +90,7 @@ const Question = ({ question }: { question: HPQuestion }) => {
                   : AnswerState.Incorrect
               );
 
-              //submitAnswer(question.id, currentAnswerId === question.correct_answer, /*todo*/);
+              submitAnswer(question.id, currentAnswerId === question.correct_answer, Date.now() - startTime);
 
               console.log(currentAnswerId === question.correct_answer);
             }}
