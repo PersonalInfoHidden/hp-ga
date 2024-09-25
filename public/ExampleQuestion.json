@@ -1,6 +1,6 @@
 {
-    "name": "Punkt på linje",
     "id": 0,
+    "type":"XYZ",
     "question_text": "Vilken av punkterna ligger på linjen L?",
     "image_path": "punktpålinje.png",
     "correct_answer": 3,

@@ -11,7 +11,7 @@ export default function Home() {
         <main className="flex flex-col items-center justify-between p-24">
             <div className="grid col-span-2">
                 <ExampleComponent>
-                    All our base are belong to us
+                    All our base are belong to us🐌🐌🐌🐌🐌🐌🐌
                 </ExampleComponent>
             </div>
         </main>

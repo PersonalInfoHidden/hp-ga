@@ -1,0 +1,40 @@
+{
+    "verb1": [
+        {
+            "id": 0,
+            "type": "ORD",
+            "question_text": "dispyt",
+            "correct_answer": 2,
+            "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"]
+        }
+    ],
+    "kva1": [
+      {
+         "id": 0,
+         "type": "ORD",
+         "question_text": "dispyt",
+         "correct_answer": 2,
+         "answers": [ "brist", "gräl", "tvekan", "besvikelse", "undantag"]
+     }
+    ],
+
+    "verb2": [
+      {
+         "id": 0,
+         "type": "ORD",
+         "question_text": "dispyt",
+         "correct_answer": 2,
+         "answers": [ "brist", "gräl", "tvekan", "besvikelse", "undantag"]
+     }
+    ],
+
+    "kva2": [
+      {
+         "id": 0,
+         "type": "ORD",
+         "question_text": "dispyt",
+         "correct_answer": 2,
+         "answers": [ "brist", "gräl", "tvekan", "besvikelse", "undantag"]
+     }
+    ]
+}

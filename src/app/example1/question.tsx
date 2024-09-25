@@ -20,9 +20,6 @@ const Question = ({ question }: { question: HPQuestion }) => {
     return (
         <div className="flex items-center justify-center">
             <div className="grid grid-cols-2 gap-y-1 w-[calc(75%+12rem)]">
-                <div className="text-center col-span-2 text-3xl md:text-8xl py-2 md:ont-semibold">
-                    {question.name}
-                </div>
                 <div className="col-span-2 mx-3">
                     <p className="text-2xl">{question.question_text}</p>
                 </div>

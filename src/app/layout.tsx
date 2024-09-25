@@ -17,8 +17,8 @@ const links: Array<Links> = [
         path: "/example1",
     },
     {
-        name: "Example 2",
-        path: "/example2",
+        name: "🐌🐌🐌🐌",
+        path: "/test/spring24",
     },
 ];
 export default function RootLayout({

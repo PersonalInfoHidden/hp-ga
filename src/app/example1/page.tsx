@@ -3,8 +3,8 @@ import Question from "./question";
 import { promises as fs } from "fs";
 
 export interface HPQuestion {
-    name: string;
     id: number;
+    type: string;
     question_text: string;
     image_path: string;
     correct_answer: number;
