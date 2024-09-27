@@ -23,22 +23,27 @@ const Question = ({ question }: { question: HPQuestion }) => {
                 <div className="col-span-2 mx-3">
                     <p className="text-2xl">{question.question_text}</p>
                 </div>
-                <div className="col-span-2 md:col-span-1 place-content-center flex justify-center items-center border border-primary-foreground">
-                    <Image
-                        src={`/images/punktpålinje.png`}
-                        width="0"
-                        className="m-2 md:mx-8 md:my-8"
-                        height="0"
-                        sizes="100vw"
-                        style={{
-                            width: "95%",
-                            height: "auto",
-                            borderRadius: "2rem",
-                        }}
-                        alt="Picture of the author"
-                        priority={false}
-                    />
-                </div>
+                {question.image_path ? (
+                    <div className="col-span-2 md:col-span-1 place-content-center flex justify-center items-center border border-primary-foreground">
+                        <Image
+                            src={`/images/${question.image_path}`}
+                            width="0"
+                            className="m-2 md:mx-8 md:my-8"
+                            height="0"
+                            sizes="100vw"
+                            style={{
+                                width: "95%",
+                                height: "auto",
+                                borderRadius: "2rem",
+                            }}
+                            alt="Picture of the author"
+                            priority={false}
+                        />
+                    </div>
+                ) : (
+                    <></>
+                )}
+
                 <ul className="grid list-none gap-y-2 col-span-2 md:col-span-1 px-4 md:px-0">
                     {question.answers.map((value, index) => (
                         <li key={value}>

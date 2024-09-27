@@ -6,7 +6,7 @@ export interface HPQuestion {
     id: number;
     type: string;
     question_text: string;
-    image_path: string;
+    image_path?: string;
     correct_answer: number;
     answers: string[];
 }
