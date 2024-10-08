@@ -6,35 +6,126 @@
             "question_text": "dispyt",
             "correct_answer": 2,
             "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"]
+        },
+        {
+            "question_name": "angeläget",
+            "answers": [
+                "tydligt",
+                "utmanande",
+                "informativt",
+                "noggrant",
+                "viktigt"
+            ],
+            "type": "ORD",
+            "correct_answer": 5,
+            "id": 0
+        },
+        {
+            "id": 2,
+            "question_name": "supplement",
+            "answers": [
+                "verskott",
+                "urval",
+                "innehåll",
+                "tillägg",
+                "understöd"
+            ],
+            "type": "ORD",
+            "correct_answer": 4
+        },
+        {
+            "id": 3,
+            "question_name": "aktad",
+            "answers": [
+                "respekterad",
+                "h\u00f6gtidlig",
+                "artig",
+                "f\u00f6rsiktig",
+                "undanskymd"
+            ],
+            "type": "ORD",
+            "correct_answer": 1
+        },
+        {
+            "id": 4,
+            "question_name": "rata",
+            "answers": [
+                "granska",
+                "avvisa",
+                "fastst\u00e4lla",
+                "ifr\u00e5gas\u00e4tta",
+                "samordna"
+            ],
+            "type": "ORD",
+            "correct_answer": 2
+        },
+        {
+            "id": 5,
+            "question_name": "illa \u00e5tg\u00e5ngen",
+            "answers": [
+                "helt uttorkad",
+                "n\u00e4stan slut",
+                "mycket ledsen",
+                "sv\u00e5rt angripen",
+                "l\u00e4mnad utanf\u00f6r"
+            ],
+            "type": "ORD",
+            "correct_answer": 4
+        },
+        {
+            "id": 6,
+            "question_name": "b\u00e4rkraft",
+            "answers": [
+                "avlagring",
+                "prestation",
+                "tryck",
+                "h\u00e5llbarhet",
+                "f\u00f6rs\u00f6rjning"
+            ],
+            "type": "ORD",
+            "correct_answer": 4
+        },
+        {
+            "id": 7,
+            "question_name": "vegetera",
+            "answers": [
+                "tala g\u00e5tfullt",
+                "vara gener\u00f6s",
+                "leva i overksamhet",
+                "besv\u00e4ra i on\u00f6dan",
+                "sprida oro"
+            ],
+            "type": "ORD",
+            "correct_answer": 3
         }
     ],
     "kva1": [
-      {
-         "id": 0,
-         "type": "ORD",
-         "question_text": "dispyt",
-         "correct_answer": 2,
-         "answers": [ "brist", "gräl", "tvekan", "besvikelse", "undantag"]
-     }
+        {
+            "id": 0,
+            "type": "ORD",
+            "question_text": "dispyt",
+            "correct_answer": 2,
+            "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"]
+        }
     ],
 
     "verb2": [
-      {
-         "id": 0,
-         "type": "ORD",
-         "question_text": "dispyt",
-         "correct_answer": 2,
-         "answers": [ "brist", "gräl", "tvekan", "besvikelse", "undantag"]
-     }
+        {
+            "id": 0,
+            "type": "ORD",
+            "question_text": "dispyt",
+            "correct_answer": 2,
+            "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"]
+        }
     ],
 
     "kva2": [
-      {
-         "id": 0,
-         "type": "ORD",
-         "question_text": "dispyt",
-         "correct_answer": 2,
-         "answers": [ "brist", "gräl", "tvekan", "besvikelse", "undantag"]
-     }
+        {
+            "id": 0,
+            "type": "ORD",
+            "question_text": "dispyt",
+            "correct_answer": 2,
+            "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"]
+        }
     ]
 }
