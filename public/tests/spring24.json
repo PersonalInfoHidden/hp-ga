@@ -8,6 +8,7 @@
             "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"]
         },
         {
+            "id": 1,
             "question_name": "angeläget",
             "answers": [
                 "tydligt",
@@ -17,8 +18,7 @@
                 "viktigt"
             ],
             "type": "ORD",
-            "correct_answer": 5,
-            "id": 0
+            "correct_answer": 5
         },
         {
             "id": 2,
