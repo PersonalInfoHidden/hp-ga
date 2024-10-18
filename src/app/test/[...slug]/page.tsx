@@ -1,7 +1,6 @@
 import React from "react";
 import { promises as fs } from "fs";
-import { HPQuestion } from "@/app/example1/page";
-import Question from "@/app/example1/question";
+import { Question, HPQuestion } from "@/components/question";
 
 interface Questions {
     verb1: HPQuestion[];

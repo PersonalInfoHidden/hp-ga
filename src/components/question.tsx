@@ -3,8 +3,16 @@
 import React, { useEffect, useState } from "react";
 import punktpålinje from "publicimagespunktpålinje.png";
 import Image from "next/image";
-import { HPQuestion } from "./page";
-import submitAnswer from "./submit";
+import submitAnswer from "../app/example1/submit";
+
+export interface HPQuestion {
+    id: number;
+    type: string;
+    question_text: string;
+    image_path?: string;
+    correct_answer: number;
+    answers: string[];
+}
 
 enum AnswerState {
     Incomplete,
@@ -12,7 +20,7 @@ enum AnswerState {
     Correct,
 }
 
-const Question = ({ question }: { question: HPQuestion }) => {
+export const Question = ({ question }: { question: HPQuestion }) => {
     const [currentAnswerId, setCurrentAnswerId] = useState<number>(1);
     const [lockedAnswer, setLockedAnswer] = useState<boolean>(false);
     const [correctlyAnswered, setCorrectlyAnswered] = useState<AnswerState>(
@@ -109,5 +117,3 @@ const Question = ({ question }: { question: HPQuestion }) => {
         </div>
     );
 };
-
-export default Question;
