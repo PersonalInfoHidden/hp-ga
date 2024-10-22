@@ -5,7 +5,8 @@
             "type": "ORD",
             "question_text": "dispyt",
             "correct_answer": 2,
-            "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"]
+            "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"],
+            "additional_resorces": null
         },
         {
             "question_name": "angeläget",
@@ -18,7 +19,8 @@
             ],
             "type": "ORD",
             "correct_answer": 5,
-            "id": 0
+            "id": 0,
+            "additional_resorces": null
         },
         {
             "id": 2,
@@ -31,7 +33,8 @@
                 "understöd"
             ],
             "type": "ORD",
-            "correct_answer": 4
+            "correct_answer": 4,
+            "additional_resorces": null
         },
         {
             "id": 3,
@@ -44,7 +47,8 @@
                 "undanskymd"
             ],
             "type": "ORD",
-            "correct_answer": 1
+            "correct_answer": 1,
+            "additional_resorces": null
         },
         {
             "id": 4,
@@ -57,7 +61,8 @@
                 "samordna"
             ],
             "type": "ORD",
-            "correct_answer": 2
+            "correct_answer": 2,
+            "additional_resorces": null
         },
         {
             "id": 5,
@@ -70,7 +75,8 @@
                 "l\u00e4mnad utanf\u00f6r"
             ],
             "type": "ORD",
-            "correct_answer": 4
+            "correct_answer": 4,
+            "additional_resorces": null
         },
         {
             "id": 6,
@@ -83,7 +89,8 @@
                 "f\u00f6rs\u00f6rjning"
             ],
             "type": "ORD",
-            "correct_answer": 4
+            "correct_answer": 4,
+            "additional_resorces": null
         },
         {
             "id": 7,
@@ -96,7 +103,21 @@
                 "sprida oro"
             ],
             "type": "ORD",
-            "correct_answer": 3
+            "correct_answer": 3,
+            "additional_resorces": null
+        },
+        {
+            "id": 8,
+            "question_name": "I vilken av följande frågor var Transportstyrelsen och Falu kommun oense?",
+            "answers": [
+                "Frågan om Klarbo skulle ha rätt att ta betalt för övningskörningen eller inte.",
+                "Frågan hur snabbt övningskörningsverksamheten skulle upphöra.",
+                "Frågan om verksamheten skulle betraktas som övningskörning eller inte.",
+                "Frågan hur Transportstyrelsens rapport skulle uppfattas."
+            ],
+            "type": "LAS",
+            "correct_answer": 3,
+            "additional_resorces": null
         }
     ],
     "kva1": [

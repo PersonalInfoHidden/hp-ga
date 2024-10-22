@@ -20,6 +20,10 @@ const links: Array<Links> = [
         name: "🐌🐌🐌🐌",
         path: "/test/spring24",
     },
+    {
+        name: "Colors",
+        path: "/colors",
+    },
 ];
 export default function RootLayout({
     children,
