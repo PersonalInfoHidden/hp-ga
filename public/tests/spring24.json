@@ -9,6 +9,7 @@
             "additional_resorces": null
         },
         {
+            "id": 1,
             "question_name": "angeläget",
             "answers": [
                 "tydligt",
@@ -19,7 +20,7 @@
             ],
             "type": "ORD",
             "correct_answer": 5,
-            "id": 0,
+
             "additional_resorces": null
         },
         {
