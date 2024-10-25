@@ -10,7 +10,7 @@
         },
         {
             "id": 1,
-            "question_name": "angeläget",
+            "question_text": "angeläget",
             "answers": [
                 "tydligt",
                 "utmanande",
@@ -25,7 +25,7 @@
         },
         {
             "id": 2,
-            "question_name": "supplement",
+            "question_text": "supplement",
             "answers": [
                 "verskott",
                 "urval",
@@ -39,7 +39,7 @@
         },
         {
             "id": 3,
-            "question_name": "aktad",
+            "question_text": "aktad",
             "answers": [
                 "respekterad",
                 "h\u00f6gtidlig",
@@ -53,7 +53,7 @@
         },
         {
             "id": 4,
-            "question_name": "rata",
+            "question_text": "rata",
             "answers": [
                 "granska",
                 "avvisa",
@@ -67,7 +67,7 @@
         },
         {
             "id": 5,
-            "question_name": "illa \u00e5tg\u00e5ngen",
+            "question_text": "illa \u00e5tg\u00e5ngen",
             "answers": [
                 "helt uttorkad",
                 "n\u00e4stan slut",
@@ -81,7 +81,7 @@
         },
         {
             "id": 6,
-            "question_name": "b\u00e4rkraft",
+            "question_text": "b\u00e4rkraft",
             "answers": [
                 "avlagring",
                 "prestation",
@@ -95,7 +95,7 @@
         },
         {
             "id": 7,
-            "question_name": "vegetera",
+            "question_text": "vegetera",
             "answers": [
                 "tala g\u00e5tfullt",
                 "vara gener\u00f6s",
@@ -109,7 +109,7 @@
         },
         {
             "id": 8,
-            "question_name": "I vilken av följande frågor var Transportstyrelsen och Falu kommun oense?",
+            "question_text": "I vilken av följande frågor var Transportstyrelsen och Falu kommun oense?",
             "answers": [
                 "Frågan om Klarbo skulle ha rätt att ta betalt för övningskörningen eller inte.",
                 "Frågan hur snabbt övningskörningsverksamheten skulle upphöra.",
