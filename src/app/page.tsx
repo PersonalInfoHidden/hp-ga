@@ -3,6 +3,7 @@ import React from "react";
 import { Links, NavBar } from "./navbar";
 import { TestViewer } from "./testviewer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { RandomViewer } from "./randomviewer";
 
 const ExampleComponent = ({ children }: { children?: React.ReactNode }) => {
     return <div>{children}</div>;
@@ -27,7 +28,8 @@ export default function Home() {
                     </div>
                 </TabsContent>
                 <TabsContent value="random">
-                    <div></div>
+                    <RandomViewer/>
+                    
                 </TabsContent>
             </Tabs>
         </main>
