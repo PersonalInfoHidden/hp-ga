@@ -1,35 +1,64 @@
 import Image from "next/image";
-import React from "react";
+import React, { use } from "react";
 import { Links, NavBar } from "./navbar";
 import { TestViewer } from "./testviewer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Link from "next/link";
+import { createClient } from "@/utils/supabase/server";
 
 const ExampleComponent = ({ children }: { children?: React.ReactNode }) => {
     return <div>{children}</div>;
 };
 
-const testCategorys: Array<{ name: string; path: string }> = [
-    { name: "XYZ", path: "/random/xyz" },
+const testCategorys: Array<{ name: string; path: string; key: number }> = [
+    { name: "xyz", path: "/random/xyz", key: 0 },
 ];
 
-export default function Home() {
+export default async function Home() {
+    const supabase = createClient();
+
+    const {
+        data: { user },
+    } = await supabase.auth.getUser();
+    const isLoggedIn = user !== null;
     return (
         <main className="flex flex-col px-12">
             <Tabs defaultValue="tests">
                 <TabsList>
+                    <TabsTrigger value="home">Home</TabsTrigger>
                     <TabsTrigger value="tests">Tests</TabsTrigger>
                     <TabsTrigger value="random">Random</TabsTrigger>
                     <TabsTrigger value="recent">Recents</TabsTrigger>
                 </TabsList>
+                <TabsContent value="home">
+                    <div>
+                        <TestViewer />
+                    </div>
+                </TabsContent>
                 <TabsContent value="tests">
                     <div className="grid grid-row-2 my-12">
                         <TestViewer />
                     </div>
                 </TabsContent>
                 <TabsContent value="random">
-                    <div></div>
+                    <div>
+                        {testCategorys.map((value, index) => (
+                            <div key={value.key}>
+                                <Link href={value.path}>{value.name} </Link>
+                            </div>
+                        ))}
+                    </div>
+                </TabsContent>
+                <TabsContent value="recent">
+                    <div>
+                        <Recents session={isLoggedIn} />
+                    </div>
                 </TabsContent>
             </Tabs>
         </main>
     );
+}
+
+function Recents({ session }: { session: boolean }) {
+    return <></>;
 }
