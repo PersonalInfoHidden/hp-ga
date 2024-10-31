@@ -5,6 +5,7 @@ import { TestViewer } from "./testviewer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import { createClient } from "@/utils/supabase/server";
+import { RandomViewer } from "./randomviewer";
 
 const ExampleComponent = ({ children }: { children?: React.ReactNode }) => {
     return <div>{children}</div>;
@@ -41,18 +42,7 @@ export default async function Home() {
                     </div>
                 </TabsContent>
                 <TabsContent value="random">
-                    <div>
-                        {testCategorys.map((value, index) => (
-                            <div key={value.key}>
-                                <Link href={value.path}>{value.name} </Link>
-                            </div>
-                        ))}
-                    </div>
-                </TabsContent>
-                <TabsContent value="recent">
-                    <div>
-                        <Recents session={isLoggedIn} />
-                    </div>
+                    <RandomViewer />
                 </TabsContent>
             </Tabs>
         </main>

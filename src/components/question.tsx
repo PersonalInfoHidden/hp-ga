@@ -33,6 +33,7 @@ export const Question = ({ question }: { question: HPQuestion }) => {
     }, []);
 
     const AnswerList = () => {
+        console.log("rerendering Answerlist")
         return (
             <ul className="grid list-none gap-y-2 col-span-2 md:col-span-1 px-4 md:px-0">
                 {question.answers.map((value, index) => (
@@ -48,7 +49,7 @@ export const Question = ({ question }: { question: HPQuestion }) => {
                             }`}
                         >
                             <input
-                                defaultChecked={index == 0}
+                                defaultChecked={index == currentAnswerId - 1}
                                 type="radio"
                                 name="data-answers"
                                 className="hidden"
@@ -130,6 +131,7 @@ export const Question = ({ question }: { question: HPQuestion }) => {
         );
     }
     else {
+        console.log("rerendering question")
         return (
             <div className="flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-y-1 w-[calc(75%+12rem)]">

@@ -30,7 +30,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
 
     if (data === null) return <div></div>;
 
-    if (slugLength !== 3) return <div>not enought slugs 🐌🐌🐌</div>;
+    if (slugLength !== 3) return <div>not enough slugs 🐌🐌🐌</div>;
 
     if (!Object.hasOwn(data, params.slug[1])) return <div>Wrong Keys</div>;
 

@@ -1,6 +1,6 @@
 {
 "id": ,
-"question_name": "a",
+"question_text": "a",
 "answers": [
 "a",
 "b",
