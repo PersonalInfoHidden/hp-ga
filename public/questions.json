@@ -4,7 +4,8 @@
         "question_text": "dispyt",
         "correct_answer": 2,
         "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"],
-        "additional_resorces": null
+        "additional_resorces": null,
+        "test": "var2024"
     },
     {
         "question_text": "angeläget",
@@ -18,14 +19,16 @@
         "type": "ORD",
         "correct_answer": 5,
 
-        "additional_resorces": null
+        "additional_resorces": null,
+        "test": "var2024"
     },
     {
         "question_text": "supplement",
         "answers": ["verskott", "urval", "innehåll", "tillägg", "understöd"],
         "type": "ORD",
         "correct_answer": 4,
-        "additional_resorces": null
+        "additional_resorces": null,
+        "test": "var2024"
     },
     {
         "question_text": "aktad",
@@ -37,7 +40,8 @@
             "undanskymd"
         ],
         "type": "ORD",
-        "additional_resorces": null
+        "additional_resorces": null,
+        "test": "var2024"
     },
     {
         "question_text": "rata",
@@ -50,7 +54,8 @@
         ],
         "type": "ORD",
         "correct_answer": 2,
-        "additional_resorces": null
+        "additional_resorces": null,
+        "test": "var2024"
     },
     {
         "question_text": "illa \u00e5tg\u00e5ngen",
@@ -63,7 +68,8 @@
         ],
         "type": "ORD",
         "correct_answer": 4,
-        "additional_resorces": null
+        "additional_resorces": null,
+        "test": "var2024"
     },
     {
         "question_text": "b\u00e4rkraft",
@@ -76,7 +82,8 @@
         ],
         "type": "ORD",
         "correct_answer": 4,
-        "additional_resorces": null
+        "additional_resorces": null,
+        "test": "var2024"
     },
     {
         "question_text": "vegetera",
@@ -89,7 +96,8 @@
         ],
         "type": "ORD",
         "correct_answer": 3,
-        "additional_resorces": null
+        "additional_resorces": null,
+        "test": "var2024"
     },
     {
         "type": "ORD",

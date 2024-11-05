@@ -1,18 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import punktpålinje from "publicimagespunktpålinje.png";
 import Image from "next/image";
 import submitAnswer from "../app/example1/submit";
-
-export interface HPQuestion {
-    id: number;
-    type: string;
-    question_text: string;
-    additional_resorces?: string;
-    correct_answer: number;
-    answers: string[];
-}
+import { HPQuestion } from "@/components/question";
 
 enum AnswerState {
     Incomplete,
@@ -20,12 +11,32 @@ enum AnswerState {
     Correct,
 }
 
-export const Question = ({ question }: { question: HPQuestion }) => {
+const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
     const [currentAnswerId, setCurrentAnswerId] = useState<number>(1);
     const [lockedAnswer, setLockedAnswer] = useState<boolean>(false);
     const [correctlyAnswered, setCorrectlyAnswered] = useState<AnswerState>(
         AnswerState.Incomplete
     );
+    const startingId = Math.floor(Math.random() * questions.length);
+    const [currentId, setCurrentId] = useState(startingId);
+    const [question, setQuestion] = useState(questions[currentId]);
+    const [idsUsed, setIdsUsed] = useState<number[]>([startingId]);
+
+    const handleNewQuestion = () => {
+        let newId;
+        do {
+            newId = Math.floor(Math.random() * questions.length);
+        } while (idsUsed.includes(newId) && idsUsed.length < questions.length);
+
+        if (idsUsed.length < questions.length) {
+            setCurrentId(newId);
+            setIdsUsed([...idsUsed, newId]);
+        } else {
+            alert("All questions have been used!");
+        }
+        setQuestion(questions[currentId]);
+    };
+
     const [startTime, setStartTime] = useState<number>(0);
 
     useEffect(() => {
@@ -35,7 +46,13 @@ export const Question = ({ question }: { question: HPQuestion }) => {
     const AnswerList = () => {
         console.log("rerendering Answerlist");
         return (
-            <ul className="grid list-none gap-y-2 col-span-2 px-4 md:px-0">
+            <ul
+                className={`grid list-none gap-y-2 ${
+                    question.additional_resorces
+                        ? "col-span-2 md:col-span-1"
+                        : "col-span-2"
+                } px-4 md:px-0`}
+            >
                 {question.answers.map((value, index) => (
                     <li key={value}>
                         <label
@@ -55,7 +72,6 @@ export const Question = ({ question }: { question: HPQuestion }) => {
                                 className="hidden"
                                 onChange={() => {
                                     setCurrentAnswerId(index + 1);
-                                    console.log(question.correct_answer);
                                 }}
                                 disabled={lockedAnswer}
                             />
@@ -109,7 +125,8 @@ export const Question = ({ question }: { question: HPQuestion }) => {
                         <p className="text-2xl">{question.question_text}</p>
                     </div>
                     <div
-                        className={`col-span-2 md:col-span-1 place-content-center "flex"
+                        className={`col-span-2 md:col-span-1 place-content-center ${
+                            question.additional_resorces ? "flex" : "hidden"
                         } justify-center items-center border border-primary-foreground`}
                     >
                         <Image
@@ -141,9 +158,28 @@ export const Question = ({ question }: { question: HPQuestion }) => {
                         <p className="text-2xl">{question.question_text}</p>
                     </div>
                     <AnswerList></AnswerList>
-                    <CheckButton></CheckButton>
+                    {correctlyAnswered !== AnswerState.Incomplete ? (
+                        <div className="col-span-2 py-2 grid place-items-center">
+                            <button
+                                onClick={() => {
+                                    handleNewQuestion();
+                                    setCorrectlyAnswered(
+                                        AnswerState.Incomplete
+                                    );
+                                    setLockedAnswer(false);
+                                }}
+                                className="uppercase text-lg bg-amber-500 py-4 font-semibold border-4 border-amber-200 mx-3 my-2 w-11/12 rounded-lg hover:bg-amber-400 hover:border-amber-600 "
+                            >
+                                Next
+                            </button>
+                        </div>
+                    ) : (
+                        <CheckButton />
+                    )}
                 </div>
             </div>
         );
     }
 };
+
+export default RandomQuestions;

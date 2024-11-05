@@ -1,5 +1,6 @@
 import { promises as fs } from "fs";
 import { Question, HPQuestion } from "@/components/question";
+import RandomQuestions from "./randomquestion";
 
 export const RandomViewer = async () => {
     const file = await fs.readFile(
@@ -21,11 +22,7 @@ export const RandomViewer = async () => {
 
     return (
         <div>
-            <Question
-                question={
-                    questions[Math.floor(Math.random() * questions.length)]
-                }
-            ></Question>
+            <RandomQuestions questions={questions} />
         </div>
     );
 };
