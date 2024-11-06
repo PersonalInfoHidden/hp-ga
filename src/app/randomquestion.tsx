@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import submitAnswer from "../app/example1/submit";
+import submitAnswer from "../lib/submit";
 import { HPQuestion } from "@/components/question";
 
 enum AnswerState {
@@ -19,7 +19,7 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
     );
     const startingId = Math.floor(Math.random() * questions.length);
     const [currentId, setCurrentId] = useState(startingId);
-    const [question, setQuestion] = useState(questions[currentId]);
+    const [question, setQuestion] = useState(questions[startingId]);
     const [idsUsed, setIdsUsed] = useState<number[]>([startingId]);
 
     const handleNewQuestion = () => {
@@ -34,7 +34,7 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
         } else {
             alert("All questions have been used!");
         }
-        setQuestion(questions[currentId]);
+        setQuestion(questions[newId]);
     };
 
     const [startTime, setStartTime] = useState<number>(0);
@@ -44,7 +44,6 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
     }, []);
 
     const AnswerList = () => {
-        console.log("rerendering Answerlist");
         return (
             <ul
                 className={`grid list-none gap-y-2 ${
@@ -117,6 +116,23 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
         );
     };
 
+    const NextButton = () => {
+        return (
+            <div className="col-span-2 py-2 grid place-items-center">
+                <button
+                    onClick={() => {
+                        handleNewQuestion();
+                        setCorrectlyAnswered(AnswerState.Incomplete);
+                        setLockedAnswer(false);
+                    }}
+                    className="uppercase text-lg bg-amber-500 py-4 font-semibold border-4 border-amber-200 mx-3 my-2 w-11/12 rounded-lg hover:bg-amber-400 hover:border-amber-600 "
+                >
+                    Next
+                </button>
+            </div>
+        );
+    };
+
     if (question.additional_resorces) {
         return (
             <div className="flex items-center justify-center">
@@ -145,12 +161,15 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
                         />
                     </div>
                     <AnswerList></AnswerList>
-                    <CheckButton></CheckButton>
+                    {correctlyAnswered !== AnswerState.Incomplete ? (
+                        <NextButton />
+                    ) : (
+                        <CheckButton />
+                    )}
                 </div>
             </div>
         );
     } else {
-        console.log("rerendering question");
         return (
             <div className="flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-y-1 w-[calc(75%+12rem)]">
@@ -159,20 +178,7 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
                     </div>
                     <AnswerList></AnswerList>
                     {correctlyAnswered !== AnswerState.Incomplete ? (
-                        <div className="col-span-2 py-2 grid place-items-center">
-                            <button
-                                onClick={() => {
-                                    handleNewQuestion();
-                                    setCorrectlyAnswered(
-                                        AnswerState.Incomplete
-                                    );
-                                    setLockedAnswer(false);
-                                }}
-                                className="uppercase text-lg bg-amber-500 py-4 font-semibold border-4 border-amber-200 mx-3 my-2 w-11/12 rounded-lg hover:bg-amber-400 hover:border-amber-600 "
-                            >
-                                Next
-                            </button>
-                        </div>
+                        <NextButton />
                     ) : (
                         <CheckButton />
                     )}

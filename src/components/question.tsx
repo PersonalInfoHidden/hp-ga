@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import punktpålinje from "publicimagespunktpålinje.png";
 import Image from "next/image";
-import submitAnswer from "../app/example1/submit";
+import submitAnswer from "../lib/submit";
 
 export interface HPQuestion {
     id: number;

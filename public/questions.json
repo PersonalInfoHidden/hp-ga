@@ -39,6 +39,7 @@
             "f\u00f6rsiktig",
             "undanskymd"
         ],
+        "correct_answer": 1,
         "type": "ORD",
         "additional_resorces": null,
         "test": "var2024"
@@ -98,23 +99,5 @@
         "correct_answer": 3,
         "additional_resorces": null,
         "test": "var2024"
-    },
-    {
-        "type": "ORD",
-        "question_text": "dispyt",
-        "correct_answer": 2,
-        "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"]
-    },
-    {
-        "type": "ORD",
-        "question_text": "dispyt",
-        "correct_answer": 2,
-        "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"]
-    },
-    {
-        "type": "ORD",
-        "question_text": "dispyt",
-        "correct_answer": 2,
-        "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"]
     }
 ]
