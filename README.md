@@ -2,10 +2,10 @@
 
 ## Vad vi gör
 
-HP Ga (högskoleprovs gymnasiearbete) är en gratis och open sorce PWA (Progressive Web App). Vi bygger ett sätt för högskoleprovstagare att träna på provet enkelt och gratis.
+HP Ga (Högskoleprovs Gymnasiearbete) är en gratis och open source PWA (Progressive Web App). Vi bygger ett sätt för högskoleprovstagare att träna på provet enkelt och gratis.
 
-- [x] Välja att träna på slumpmessiga provfrågor
-- [ ] Välja att träna på spesifika prov och delar
+- [x] Välja att träna på slumpmässiga provfrågor
+- [ ] Välja att träna på specifika prov och delar
 - [ ] Se tidskillnader och resultatskillnader över tid
 - [x] Ha roligt med appen 
 
