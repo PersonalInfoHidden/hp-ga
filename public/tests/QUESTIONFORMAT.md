@@ -10,5 +10,5 @@
 ],
 "type": "a",
 "correct_answer": ,
-"additional_resorces": null
+"additional_resources": null
 }

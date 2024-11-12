@@ -47,7 +47,7 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
         return (
             <ul
                 className={`grid list-none gap-y-2 ${
-                    question.additional_resorces
+                    question.additional_resources
                         ? "col-span-2 md:col-span-1"
                         : "col-span-2"
                 } px-4 md:px-0`}
@@ -133,7 +133,7 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
         );
     };
 
-    if (question.additional_resorces) {
+    if (question.additional_resources) {
         return (
             <div className="flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-y-1 w-[calc(75%+12rem)]">
@@ -142,11 +142,11 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
                     </div>
                     <div
                         className={`col-span-2 md:col-span-1 place-content-center ${
-                            question.additional_resorces ? "flex" : "hidden"
+                            question.additional_resources ? "flex" : "hidden"
                         } justify-center items-center border border-primary-foreground`}
                     >
                         <Image
-                            src={`/images/${question.additional_resorces}`}
+                            src={`/images/${question.additional_resources}`}
                             width="0"
                             className="m-2 md:mx-8 md:my-8"
                             height="0"

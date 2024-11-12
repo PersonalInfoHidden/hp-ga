@@ -9,7 +9,7 @@ export interface HPQuestion {
     id: number;
     type: string;
     question_text: string;
-    additional_resorces?: string;
+    additional_resources?: string;
     correct_answer: number;
     answers: string[];
 }
@@ -101,7 +101,7 @@ export const Question = ({ question }: { question: HPQuestion }) => {
         );
     };
 
-    if (question.additional_resorces) {
+    if (question.additional_resources) {
         return (
             <div className="flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-y-1 w-[calc(75%+12rem)]">
@@ -113,7 +113,7 @@ export const Question = ({ question }: { question: HPQuestion }) => {
                         } justify-center items-center border border-primary-foreground`}
                     >
                         <Image
-                            src={`/images/${question.additional_resorces}`}
+                            src={`/images/${question.additional_resources}`}
                             width="0"
                             className="m-2 md:mx-8 md:my-8"
                             height="0"

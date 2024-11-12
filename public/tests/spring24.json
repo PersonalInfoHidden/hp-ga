@@ -6,7 +6,7 @@
             "question_text": "dispyt",
             "correct_answer": 2,
             "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"],
-            "additional_resorces": null
+            "additional_resources": null
         },
         {
             "id": 1,
@@ -21,7 +21,7 @@
             "type": "ORD",
             "correct_answer": 5,
 
-            "additional_resorces": null
+            "additional_resources": null
         },
         {
             "id": 2,
@@ -35,7 +35,7 @@
             ],
             "type": "ORD",
             "correct_answer": 4,
-            "additional_resorces": null
+            "additional_resources": null
         },
         {
             "id": 3,
@@ -49,7 +49,7 @@
             ],
             "type": "ORD",
             "correct_answer": 1,
-            "additional_resorces": null
+            "additional_resources": null
         },
         {
             "id": 4,
@@ -63,7 +63,7 @@
             ],
             "type": "ORD",
             "correct_answer": 2,
-            "additional_resorces": null
+            "additional_resources": null
         },
         {
             "id": 5,
@@ -77,7 +77,7 @@
             ],
             "type": "ORD",
             "correct_answer": 4,
-            "additional_resorces": null
+            "additional_resources": null
         },
         {
             "id": 6,
@@ -91,7 +91,7 @@
             ],
             "type": "ORD",
             "correct_answer": 4,
-            "additional_resorces": null
+            "additional_resources": null
         },
         {
             "id": 7,
@@ -105,7 +105,7 @@
             ],
             "type": "ORD",
             "correct_answer": 3,
-            "additional_resorces": null
+            "additional_resources": null
         },
         {
             "id": 8,
@@ -118,7 +118,7 @@
             ],
             "type": "LAS",
             "correct_answer": 3,
-            "additional_resorces": null
+            "additional_resources": null
         }
     ],
     "kva1": [

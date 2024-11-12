@@ -3,8 +3,14 @@
         "type": "ORD",
         "question_text": "dispyt",
         "correct_answer": 2,
-        "answers": ["brist", "gräl", "tvekan", "besvikelse", "undantag"],
-        "additional_resorces": null,
+        "answers": [
+            "brist",
+            "gräl",
+            "tvekan",
+            "besvikelse",
+            "undantag"
+        ],
+        "additional_resources": null,
         "test": "var2024"
     },
     {
@@ -18,30 +24,35 @@
         ],
         "type": "ORD",
         "correct_answer": 5,
-
-        "additional_resorces": null,
+        "additional_resources": null,
         "test": "var2024"
     },
     {
         "question_text": "supplement",
-        "answers": ["verskott", "urval", "innehåll", "tillägg", "understöd"],
+        "answers": [
+            "verskott",
+            "urval",
+            "innehåll",
+            "tillägg",
+            "understöd"
+        ],
         "type": "ORD",
         "correct_answer": 4,
-        "additional_resorces": null,
+        "additional_resources": null,
         "test": "var2024"
     },
     {
         "question_text": "aktad",
         "answers": [
             "respekterad",
-            "h\u00f6gtidlig",
+            "högtidlig",
             "artig",
-            "f\u00f6rsiktig",
+            "försiktig",
             "undanskymd"
         ],
         "correct_answer": 1,
         "type": "ORD",
-        "additional_resorces": null,
+        "additional_resources": null,
         "test": "var2024"
     },
     {
@@ -49,55 +60,251 @@
         "answers": [
             "granska",
             "avvisa",
-            "fastst\u00e4lla",
-            "ifr\u00e5gas\u00e4tta",
+            "fastställa",
+            "ifrågasätta",
             "samordna"
         ],
         "type": "ORD",
         "correct_answer": 2,
-        "additional_resorces": null,
+        "additional_resources": null,
         "test": "var2024"
     },
     {
-        "question_text": "illa \u00e5tg\u00e5ngen",
+        "question_text": "illa åtgången",
         "answers": [
             "helt uttorkad",
-            "n\u00e4stan slut",
+            "nästan slut",
             "mycket ledsen",
-            "sv\u00e5rt angripen",
-            "l\u00e4mnad utanf\u00f6r"
+            "svårt angripen",
+            "lämnad utanför"
         ],
         "type": "ORD",
         "correct_answer": 4,
-        "additional_resorces": null,
+        "additional_resources": null,
         "test": "var2024"
     },
     {
-        "question_text": "b\u00e4rkraft",
+        "question_text": "bärkraft",
         "answers": [
             "avlagring",
             "prestation",
             "tryck",
-            "h\u00e5llbarhet",
-            "f\u00f6rs\u00f6rjning"
+            "hållbarhet",
+            "försörjning"
         ],
         "type": "ORD",
         "correct_answer": 4,
-        "additional_resorces": null,
+        "additional_resources": null,
         "test": "var2024"
     },
     {
         "question_text": "vegetera",
         "answers": [
-            "tala g\u00e5tfullt",
-            "vara gener\u00f6s",
+            "tala gåtfullt",
+            "vara generös",
             "leva i overksamhet",
-            "besv\u00e4ra i on\u00f6dan",
+            "besvära i onödan",
             "sprida oro"
         ],
         "type": "ORD",
         "correct_answer": 3,
-        "additional_resorces": null,
+        "additional_resources": null,
         "test": "var2024"
+    },
+    {
+        "question_text": "egalitär",
+        "answers": [
+            "jämlik",
+            "tillfällig",
+            "obekymrad",
+            "välvillig",
+            "ursprunglig"
+        ],
+        "correct_answer": 1,
+        "type": "ORD",
+        "test": "var2024",
+        "additional_resources": null
+    },
+    {
+        "question_text": "kavalkad",
+        "answers": [
+            "kort historia",
+            "utvald grupp",
+            "lång rad",
+            "tapper skara",
+            "begränsad mängd"
+        ],
+        "correct_answer": 3,
+        "type": "ORD",
+        "additional_resources": null,
+        "test": "var2024"
+    },
+    {
+        "question_text": "försegla",
+        "answers": [
+            "upphöra",
+            "tillsluta",
+            "undersöka",
+            "avgöra",
+            "omringa"
+        ],
+        "correct_answer": 2,
+        "type": "ORD",
+        "additional_resources": null,
+        "test": "var2024"
+    },
+    {
+        "question_text": "autodidakt",
+        "answers": [
+            "pålitlig person",
+            "mäktig person",
+            "egoistisk person",
+            "inbunden person",
+            "självlärd person"
+        ],
+        "correct_answer": 5,
+        "type": "ORD",
+        "additional_resources": null,
+        "test": "var2024"
+    },
+    {
+        "question_text": "gentemot",
+        "answers": [
+            "nära intill",
+            "bortsett från",
+            "som alternativ till",
+            "med tanke på",
+            "i förhållande till"
+        ],
+        "correct_answer": 5,
+        "type": "ORD",
+        "additional_resources": null,
+        "test": "var2024"
+    },
+    {
+        "question_text": "utarmad",
+        "answers": [
+            "fri",
+            "farlig",
+            "förlamad",
+            "fattig",
+            "feg"
+        ],
+        "correct_answer": 4,
+        "type": "ORD",
+        "additional_resources": null,
+        "test": "var2024"
+    },
+    {
+        "question_text": "axplock",
+        "answers": [
+            "slumpartat urval",
+            "enformigt arbete",
+            "förstahandsval",
+            "kvalificerad gissning",
+            "stor noggrannhet"
+        ],
+        "correct_answer": 1,
+        "type": "ORD",
+        "additional_resources": null,
+        "test": "var2024"
+    },
+    {
+        "question_text": "exceptionell",
+        "answers": [
+            "nyanserad",
+            "högtidlig",
+            "sällsynt",
+            "överdriven",
+            "uttrycksfull"
+        ],
+        "correct_answer": 3,
+        "type": "ORD",
+        "additional_resources": null,
+        "test": "var2024"
+    },
+    {
+        "question_text": "tillkännage",
+        "answers": [
+            "anropa",
+            "meddela",
+            "besvara",
+            "instämma",
+            "efterfråga"
+        ],
+        "correct_answer": 2,
+        "type": "ORD",
+        "additional_resources": null,
+        "test": "var2024"
+    },
+    {
+        "question_text": "appell",
+        "answers": [
+            "löfte",
+            "misstanke",
+            "vädjan",
+            "övertygelse",
+            "intryck"
+        ],
+        "correct_answer": 3,
+        "type": "ORD",
+        "additional_resources": null,
+        "test": "var2024"
+    },
+    {
+        "question_text": "intrikat",
+        "answers": [
+            "invecklad",
+            "intensiv",
+            "inställsam",
+            "intressant",
+            "inåtvänd"
+        ],
+        "correct_answer": 1,
+        "type": "ORD",
+        "additional_resources": null,
+        "test": "var2024"
+    },
+    {
+        "question_text": "debacle",
+        "answers": [
+            "klarhet",
+            "omröstning",
+            "misslyckande",
+            "tillfällighet",
+            "förbättring"
+        ],
+        "correct_answer": 3,
+        "type": "ORD",
+        "additional_resources": null,
+        "test": "var2024"
+    },
+    {
+        "question_text": "hysa agg",
+        "answers": [
+            "vara spydig",
+            "kritisera",
+            "vara fientligt inställd",
+            "irritera",
+            "göra någon illa"
+        ],
+        "correct_answer": 3,
+        "type": "ORD",
+        "additional_resources": null,
+        "test": "höst2024"
+    },
+    {
+        "question_text": "kontinuum",
+        "answers": [
+            "upplösning",
+            "evigt liv",
+            "motsatsförhållande",
+            "obruten följd",
+            "förlängning"
+        ],
+        "correct_answer": 1,
+        "type": "ORD",
+        "additional_resources": null,
+        "test": "höst2024"
     }
 ]
