@@ -12,15 +12,15 @@ enum AnswerState {
 }
 
 const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
+    const [hasReadInfo, setHasReadInfo] = useState<boolean>(false);
     const [currentAnswerId, setCurrentAnswerId] = useState<number>(1);
     const [lockedAnswer, setLockedAnswer] = useState<boolean>(false);
     const [correctlyAnswered, setCorrectlyAnswered] = useState<AnswerState>(
         AnswerState.Incomplete
     );
     const startingId = Math.floor(Math.random() * questions.length);
-    const [currentId, setCurrentId] = useState(startingId);
     const [question, setQuestion] = useState(questions[startingId]);
-    const [idsUsed, setIdsUsed] = useState<number[]>([startingId]);
+    let idsUsed = [startingId];
 
     const handleNewQuestion = () => {
         let newId;
@@ -29,8 +29,7 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
         } while (idsUsed.includes(newId) && idsUsed.length < questions.length);
 
         if (idsUsed.length < questions.length) {
-            setCurrentId(newId);
-            setIdsUsed([...idsUsed, newId]);
+            idsUsed = [...idsUsed, newId];
         } else {
             alert("All questions have been used!");
         }
@@ -136,53 +135,76 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
     if (question.additional_resources) {
         return (
             <div className="flex items-center justify-center">
-                <div className="grid grid-cols-2 gap-y-1 w-[calc(75%+12rem)]">
-                    <div className="col-span-2 mx-3">
-                        <p className="text-2xl">{question.question_text}</p>
+                {!hasReadInfo ? (
+                    <button
+                        onClick={() => setHasReadInfo(true)}
+                        
+                    className="uppercase text-lg bg-amber-500 py-4 font-semibold border-4 border-amber-200 mx-3 my-2 w-11/12 rounded-lg hover:bg-amber-400 hover:border-amber-600 "
+
+                    > 
+                        Klicka här för att börja när du har papper och penna redo
+
+                    </button>
+                ) : (
+                    <div className="grid grid-cols-2 gap-y-1 w-[calc(75%+12rem)]">
+                        <div className="col-span-2 mx-3">
+                            <p className="text-2xl">{question.question_text}</p>
+                        </div>
+                        <div
+                            className={`col-span-2 md:col-span-1 place-content-center ${
+                                question.additional_resources
+                                    ? "flex"
+                                    : "hidden"
+                            } justify-center items-center border border-primary-foreground`}
+                        >
+                            <Image
+                                src={`/images/${question.additional_resources}`}
+                                width="0"
+                                className="m-2 md:mx-8 md:my-8"
+                                height="0"
+                                sizes="100vw"
+                                style={{
+                                    width: "95%",
+                                    height: "auto",
+                                    borderRadius: "2rem",
+                                }}
+                                alt="Picture of the author"
+                                priority={false}
+                            />
+                        </div>
+                        <AnswerList></AnswerList>
+                        {correctlyAnswered !== AnswerState.Incomplete ? (
+                            <NextButton />
+                        ) : (
+                            <CheckButton />
+                        )}
                     </div>
-                    <div
-                        className={`col-span-2 md:col-span-1 place-content-center ${
-                            question.additional_resources ? "flex" : "hidden"
-                        } justify-center items-center border border-primary-foreground`}
-                    >
-                        <Image
-                            src={`/images/${question.additional_resources}`}
-                            width="0"
-                            className="m-2 md:mx-8 md:my-8"
-                            height="0"
-                            sizes="100vw"
-                            style={{
-                                width: "95%",
-                                height: "auto",
-                                borderRadius: "2rem",
-                            }}
-                            alt="Picture of the author"
-                            priority={false}
-                        />
-                    </div>
-                    <AnswerList></AnswerList>
-                    {correctlyAnswered !== AnswerState.Incomplete ? (
-                        <NextButton />
-                    ) : (
-                        <CheckButton />
-                    )}
-                </div>
+                )}
             </div>
         );
     } else {
         return (
             <div className="flex items-center justify-center">
-                <div className="grid grid-cols-2 gap-y-1 w-[calc(75%+12rem)]">
-                    <div className="col-span-2 mx-3">
-                        <p className="text-2xl">{question.question_text}</p>
+                {!hasReadInfo ? (
+                    <button
+                        onClick={() => setHasReadInfo(true)}
+                        className="uppercase text-lg bg-amber-500 py-4 font-semibold border-4 border-amber-200 mx-3 my-2 w-11/12 rounded-lg hover:bg-amber-400 hover:border-amber-600 "
+                    >
+                        Klicka här för att börja när du har papper och penna redo
+                    </button>
+                ) : (
+                    <div className="grid grid-cols-2 gap-y-1 w-[calc(75%+12rem)]">
+                        <div className="col-span-2 mx-3">
+                            <p className="text-2xl">{question.question_text}</p>
+                        </div>
+                        <AnswerList></AnswerList>
+                        {correctlyAnswered !== AnswerState.Incomplete ? (
+                            <NextButton />
+                        ) : (
+                            <CheckButton />
+                        )}
                     </div>
-                    <AnswerList></AnswerList>
-                    {correctlyAnswered !== AnswerState.Incomplete ? (
-                        <NextButton />
-                    ) : (
-                        <CheckButton />
-                    )}
-                </div>
+                )}
             </div>
         );
     }

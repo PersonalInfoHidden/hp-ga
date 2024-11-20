@@ -1,5 +1,5 @@
 import { promises as fs } from "fs";
-import { Question, HPQuestion } from "@/components/question";
+import { HPQuestion } from "@/components/question";
 import RandomQuestions from "./randomquestion";
 
 export const RandomViewer = async () => {

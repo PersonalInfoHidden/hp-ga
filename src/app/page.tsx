@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import { createClient } from "@/utils/supabase/server";
 import { RandomViewer } from "./randomviewer";
+import { redirect } from "next/navigation";
 
 const ExampleComponent = ({ children }: { children?: React.ReactNode }) => {
     return <div>{children}</div>;
@@ -22,9 +23,12 @@ export default async function Home() {
         data: { user },
     } = await supabase.auth.getUser();
     const isLoggedIn = user !== null;
+    if (!isLoggedIn) {
+        redirect("/login")
+    }
     return (
         <main className="flex flex-col px-12">
-            <Tabs defaultValue="tests">
+            <Tabs defaultValue="random">
                 <TabsList>
                     <TabsTrigger value="home">Home</TabsTrigger>
                     <TabsTrigger value="tests">Tests</TabsTrigger>
