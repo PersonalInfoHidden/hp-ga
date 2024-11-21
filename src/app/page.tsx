@@ -24,11 +24,11 @@ export default async function Home() {
     } = await supabase.auth.getUser();
     const isLoggedIn = user !== null;
     if (!isLoggedIn) {
-        redirect("/login")
+        redirect("/login");
     }
     return (
         <main className="flex flex-col px-12">
-            <Tabs defaultValue="random">
+            {/* <Tabs defaultValue="random">
                 <TabsList>
                     <TabsTrigger value="home">Home</TabsTrigger>
                     <TabsTrigger value="tests">Tests</TabsTrigger>
@@ -45,10 +45,10 @@ export default async function Home() {
                         <TestViewer />
                     </div>
                 </TabsContent>
-                <TabsContent value="random">
+                <TabsContent value="random">*/}
                     <RandomViewer />
-                </TabsContent>
-            </Tabs>
+            {/*</TabsContent>
+            </Tabs>*/}
         </main>
     );
 }
