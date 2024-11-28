@@ -1678,5 +1678,565 @@
     "type": "ORD",
     "additional_resources": null,
     "test": "vår2022-2"
+  },
+  {
+    "question_text": "mellanting",
+    "answers": [
+      "samspel",
+      "anknytning",
+      "uppehåll",
+      "motsvarighet",
+      "blandning"
+    ],
+    "correct_answer": 5,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "insinuera",
+    "answers": [
+      "antyda",
+      "gissa",
+      "berömma",
+      "ljuga",
+      "misstänka"
+    ],
+    "correct_answer": 1,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "parkas",
+    "answers": [
+      "tält",
+      "jacka",
+      "målarduk",
+      "bäddsoffa",
+      "draghund"
+    ],
+    "correct_answer": 2,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "otjänlig",
+    "answers": [
+      "otydlig",
+      "orättvis",
+      "oanvändbar",
+      "obegriplig",
+      "otillgänglig"
+    ],
+    "correct_answer": 3,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "upptakt",
+    "answers": [
+      "inledning",
+      "markering",
+      "refräng",
+      "anvisning",
+      "förslag"
+    ],
+    "correct_answer": 1,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "obstinat",
+    "answers": [
+      "trotsig",
+      "okunnig",
+      "nyfiken",
+      "slarvig",
+      "högljudd"
+    ],
+    "correct_answer": 1,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "pådrag",
+    "answers": [
+      "sensationell nyhet",
+      "oönskad publicitet",
+      "rättslig följd",
+      "insättning av resurser",
+      "oväntat motstånd"
+    ],
+    "correct_answer": 4,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "stävja",
+    "answers": [
+      "påstå",
+      "mjuka upp",
+      "uppmuntra",
+      "röra ihop",
+      "motverka"
+    ],
+    "correct_answer": 5,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "hänryckt",
+    "answers": [
+      "i kris",
+      "i fred",
+      "i konflikt",
+      "i extas",
+      "i fara"
+    ],
+    "correct_answer": 4,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "ämbete",
+    "answers": [
+      "karriär",
+      "tillfälligt uppdrag",
+      "fin utmärkelse",
+      "högre befattning",
+      "administration"
+    ],
+    "correct_answer": 4,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "reklamera",
+    "answers": [
+      "prata om",
+      "intyga",
+      "märka ut",
+      "återvinna",
+      "anmärka på"
+    ],
+    "correct_answer": 5,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "anekdot",
+    "answers": [
+      "gissning",
+      "diskret gest",
+      "noggrann redogörelse",
+      "kort berättelse",
+      "motsättning"
+    ],
+    "correct_answer": 4,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "koffert",
+    "answers": [
+      "sybord",
+      "lång rock",
+      "lastpall",
+      "klädförråd",
+      "stor resväska"
+    ],
+    "correct_answer": 5,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "avsevärt",
+    "answers": [
+      "ganska",
+      "korrekt",
+      "betydligt",
+      "välriktat",
+      "fullständigt"
+    ],
+    "correct_answer": 3,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "korrespondens",
+    "answers": [
+      "inbjudan",
+      "brevväxling",
+      "enkätsvar",
+      "summering",
+      "överenskommelse"
+    ],
+    "correct_answer": 2,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "gastkramande",
+    "answers": [
+      "farlig",
+      "smärtsam",
+      "kallsinnig",
+      "spännande",
+      "livrädd"
+    ],
+    "correct_answer": 4,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "affekt",
+    "answers": [
+      "stor glädje",
+      "nyfikenhet",
+      "stark sinnesrörelse",
+      "känslokyla",
+      "total förvirring"
+    ],
+    "correct_answer": 3,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "sargad",
+    "answers": [
+      "lurad",
+      "straffad",
+      "upprörd",
+      "skadad",
+      "trängd"
+    ],
+    "correct_answer": 4,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "åtnjuta",
+    "answers": [
+      "ha",
+      "be",
+      "nå",
+      "ge",
+      "ta"
+    ],
+    "correct_answer": 1,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "näsbränna",
+    "answers": [
+      "tillrättavisning",
+      "besvikelse",
+      "felbedömning",
+      "svårighet",
+      "förolämpning"
+    ],
+    "correct_answer": 1,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "höst2021"
+  },
+  {
+    "question_text": "ornament",
+    "answers": [
+      "aftonsång",
+      "byggnad",
+      "stjärnhimmel",
+      "botemedel",
+      "utsmyckning"
+    ],
+    "correct_answer": 5,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "mynna ut i",
+    "answers": [
+      "stanna av",
+      "omvandlas till",
+      "blanda in",
+      "fyllas på med",
+      "leda till"
+    ],
+    "correct_answer": 5,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "övertramp",
+    "answers": [
+      "olämplig handling",
+      "fysisk påfrestning",
+      "byte av ståndpunkt",
+      "allvarligt missförstånd",
+      "olaga intrång"
+    ],
+    "correct_answer": 1,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "dedikerad",
+    "answers": [
+      "stödjande",
+      "beslutsam",
+      "fascinerad",
+      "hängiven",
+      "uppskattad"
+    ],
+    "correct_answer": 4,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "allmänning",
+    "answers": [
+      "grundläggande kunskap",
+      "vida spritt rykte",
+      "gemensamt ägd mark",
+      "helt vanlig person",
+      "kommunalt bostadsområde"
+    ],
+    "correct_answer": 3,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "få upprättelse",
+    "answers": [
+      "få hjälp i en krissituation",
+      "få beröm för en prestation",
+      "få möjlighet till självbestämmande",
+      "få vägledning i en svår fråga",
+      "få sitt anseende återställt"
+    ],
+    "correct_answer": 5,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "inventarier",
+    "answers": [
+      "lös egendom",
+      "råvaror",
+      "lämningar",
+      "framgångar",
+      "tillfälliga lösningar"
+    ],
+    "correct_answer": 1,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "oaktat",
+    "answers": [
+      "på grund av",
+      "trots",
+      "knappast",
+      "såsom",
+      "genomgående"
+    ],
+    "correct_answer": 2,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "ohöljd",
+    "answers": [
+      "förnedrad",
+      "öppen",
+      "sällsynt",
+      "inbjudande",
+      "otymplig"
+    ],
+    "correct_answer": 2,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "inackordering",
+    "answers": [
+      "beställning",
+      "lön och förmåner",
+      "avslag",
+      "kost och logi",
+      "överenskommelse"
+    ],
+    "correct_answer": 4,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "delegera",
+    "answers": [
+      "stifta lagar",
+      "påbörja ett projekt",
+      "överlåta beslutsrätt",
+      "avsluta en anställning",
+      "bevilja undantag"
+    ],
+    "correct_answer": 3,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "alf",
+    "answers": [
+      "änglabild",
+      "folksaga",
+      "trollkarl",
+      "naturväsen",
+      "skyddshelgon"
+    ],
+    "correct_answer": 4,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "anstötlig",
+    "answers": [
+      "bristfällig",
+      "hetsig",
+      "upprörande",
+      "ömtålig",
+      "fördomsfull"
+    ],
+    "correct_answer": 3,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "polaritet",
+    "answers": [
+      "ytterlighet",
+      "väderfenomen",
+      "motsatsförhållande",
+      "vänskapsband",
+      "klimatzon"
+    ],
+    "correct_answer": 3,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "vara gripet ur luften",
+    "answers": [
+      "sakna grund",
+      "vara osynligt",
+      "komma plötsligt",
+      "vara en sista utväg",
+      "sakna innehåll"
+    ],
+    "correct_answer": 1,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "dialektik",
+    "answers": [
+      "argumentationsteknik",
+      "skendemokrati",
+      "uppfostringsprincip",
+      "religionssamverkan",
+      "behandlingsresultat"
+    ],
+    "correct_answer": 1,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "oöverlagd",
+    "answers": [
+      "avslöjad",
+      "oslagbar",
+      "påtaglig",
+      "opåverkad",
+      "förhastad"
+    ],
+    "correct_answer": 5,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "inskränkning",
+    "answers": [
+      "anspelning",
+      "förslappning",
+      "utfrysning",
+      "tillrättavisning",
+      "begränsning"
+    ],
+    "correct_answer": 5,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "koral",
+    "answers": [
+      "droppsten",
+      "kyrkosång",
+      "samlingsrum",
+      "juvelsmycke",
+      "däggdjur"
+    ],
+    "correct_answer": 2,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
+  },
+  {
+    "question_text": "i sin linda",
+    "answers": [
+      "i sitt hem",
+      "i sin början",
+      "i sitt sammanhang",
+      "i sin ensamhet",
+      "i sitt slutskede"
+    ],
+    "correct_answer": 2,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "vår2021"
   }
 ]

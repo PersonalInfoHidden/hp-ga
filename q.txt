@@ -1,76 +1,76 @@
-2. blottlagd
-A känslosam
-B värdelös
-C synliggjord
-D övergiven
-E undanröjd
-1. signifikans
-A undantag
-B skillnad
-C måluppfyllelse
-D uppfattning
-E betydelse
-4. revidera
-A påpeka
-B hindra
-C ersätta
-D ändra
-E förneka
-3. mitos
-A celldelning
-B uttorkning
-C blödning
-D sårläkning
-E befruktning
-6. framsynthet
-A förhoppning
-B upplysning
-C övertygelse
-D utveckling
-E förutseende
-5. heterogen
-A hållbar
-B olikartad
-C i fast form
-D naturell
-E dubbelsidig
-8. galax
-A himlakropp
-B spiralform
-C tidsrymd
-D stjärnsystem
-E planetformation
-7. blidka
-A ångra sig bittert
-B lämna i fred
-C göra mer vänligt inställd
-D inge förtroende
-E be om en tjänst
-9. modest
-A snäll
-B pålitlig
-C utmanande
-D populär
-E blygsam
-10. som en osalig ande
-A naiv och godtrogen
-B orolig och rastlös
-C sviken och olycklig
-D hård och känslokall
-E hatisk och hämndlysten
+2. delegera
+A stifta lagar
+B påbörja ett projekt
+C överlåta beslutsrätt
+D avsluta en anställning
+E bevilja undantag
+1. alf
+A änglabild
+B folksaga
+C trollkarl
+D naturväsen
+E skyddshelgon
+4. anstötlig
+A bristfällig
+B hetsig
+C upprörande
+D ömtålig
+E fördomsfull
+3. polaritet
+A ytterlighet
+B väderfenomen
+C motsatsförhållande
+D vänskapsband
+E klimatzon
+6. vara gripet ur luften
+A sakna grund
+B vara osynligt
+C komma plötsligt
+D vara en sista utväg
+E sakna innehåll
+5. dialektik
+A argumentationsteknik
+B skendemokrati
+C uppfostringsprincip
+D religionssamverkan
+E behandlingsresultat
+8. oöverlagd
+A avslöjad
+B oslagbar
+C påtaglig
+D opåverkad
+E förhastad
+7. inskränkning
+A anspelning
+B förslappning
+C utfrysning
+D tillrättavisning
+E begränsning
+9. koral
+A droppsten
+B kyrkosång
+C samlingsrum
+D juvelsmycke
+E däggdjur
+10. i sin linda
+A i sitt hem
+B i sin början
+C i sitt sammanhang
+D i sin ensamhet
+E i sitt slutskede
 
 answers:
-A
-B
-C
 D
-E
-A
-B
 C
-D
+C
+C
+A
+A
 E
+E
+B
+B
 type:
 ORD
 test:
-vår
+vår2021
