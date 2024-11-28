@@ -1,5 +1,4 @@
 use serde::{Deserialize, Serialize};
-use serde_json::{json, Result, Value};
 use std::{fmt::Debug, fs};
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -57,9 +56,6 @@ fn main() {
         "Section type: should only have one line"
     );
     let q_type: String = type_lines.concat();
-
-    println!("{test}");
-    println!("{q_type}");
 
     if q_type == "ORD" {
         for parsed_questions in 0..10 {
