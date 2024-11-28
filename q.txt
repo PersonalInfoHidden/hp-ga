@@ -58,3 +58,19 @@ B orolig och rastlös
 C sviken och olycklig
 D hård och känslokall
 E hatisk och hämndlysten
+
+answers:
+A
+B
+C
+D
+E
+A
+B
+C
+D
+E
+type:
+ORD
+test:
+vår
