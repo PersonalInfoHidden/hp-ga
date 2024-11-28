@@ -20,26 +20,33 @@ fn main() {
     )
     .expect("Cant parse questions.json");
     let file = fs::read_to_string("q.txt").expect("Cant open q.txt");
-    let lines: Vec<String> = file.lines().map(|x| x.trim().to_owned()).collect();
+    let lines: Vec<String> = file
+        .lines()
+        .map(|x| x.trim().to_owned())
+        .filter(|s| s.len() > 0)
+        .collect();
 
     let answer_lines_begin = lines
         .iter()
         .position(|x| *x == "answers:")
-        .expect("Could not find answers:")
+        .expect("Could not find section answers:")
         + 1;
     let type_lines_begin = lines
         .iter()
         .position(|x| *x == "type:")
-        .expect("Could not find type:")
+        .expect("Could not find section type:")
         + 1;
     let test_lines_begin = lines
         .iter()
         .position(|x| *x == "test:")
-        .expect("Could not find test:")
+        .expect("Could not find section test:")
         + 1;
 
     let question_lines = lines[0..answer_lines_begin - 1].to_vec();
-    let answer_lines = lines[answer_lines_begin..type_lines_begin - 1].to_vec();
+    let answer_lines = lines[answer_lines_begin..type_lines_begin - 1]
+        .iter()
+        .map(|s| s.to_uppercase())
+        .collect::<Vec<String>>();
     let type_lines = lines[type_lines_begin..test_lines_begin - 1].to_vec();
     let test_lines = lines[test_lines_begin..].to_vec();
 
@@ -58,6 +65,8 @@ fn main() {
     let q_type: String = type_lines.concat();
 
     if q_type == "ORD" {
+        assert_eq!(question_lines.len(), 60, "Incorrect questions");
+        assert_eq!(answer_lines.len(), 10, "Incorrect answers");
         for parsed_questions in 0..10 {
             let mut split = question_lines[parsed_questions * 6].split('.');
             let question_idx = str::parse::<usize>(split.next().expect("Malformed questions!"))
@@ -87,5 +96,9 @@ fn main() {
         panic!();
     }
 
-    fs::write("public/questions.json", serde_json::to_string_pretty(&questions).expect("Could not convert to JSON")).expect("Could not write questions.json")
+    fs::write(
+        "public/questions.json",
+        serde_json::to_string_pretty(&questions).expect("Could not convert to JSON"),
+    )
+    .expect("Could not write questions.json")
 }
