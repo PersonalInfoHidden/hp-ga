@@ -1,76 +1,76 @@
-2. delegera
-A stifta lagar
-B påbörja ett projekt
-C överlåta beslutsrätt
-D avsluta en anställning
-E bevilja undantag
-1. alf
-A änglabild
-B folksaga
-C trollkarl
-D naturväsen
-E skyddshelgon
-4. anstötlig
-A bristfällig
-B hetsig
-C upprörande
-D ömtålig
-E fördomsfull
-3. polaritet
-A ytterlighet
-B väderfenomen
-C motsatsförhållande
-D vänskapsband
-E klimatzon
-6. vara gripet ur luften
-A sakna grund
-B vara osynligt
-C komma plötsligt
-D vara en sista utväg
-E sakna innehåll
-5. dialektik
-A argumentationsteknik
-B skendemokrati
-C uppfostringsprincip
-D religionssamverkan
-E behandlingsresultat
-8. oöverlagd
-A avslöjad
-B oslagbar
-C påtaglig
-D opåverkad
-E förhastad
-7. inskränkning
-A anspelning
-B förslappning
-C utfrysning
-D tillrättavisning
-E begränsning
-9. koral
-A droppsten
-B kyrkosång
-C samlingsrum
-D juvelsmycke
-E däggdjur
-10. i sin linda
-A i sitt hem
-B i sin början
-C i sitt sammanhang
-D i sin ensamhet
-E i sitt slutskede
+2. ypperligt
+A uppenbart
+B typiskt
+C överdrivet
+D utmärkt
+E värdefullt
+1. implicera
+A medföra
+B ställa upp
+C försvaga
+D hålla fast
+E undvika
+4. initial
+A väl insatt
+B pådrivande
+C sammanhängande
+D verkningsfull
+E inledande
+3. hieroglyf
+A gravsten
+B himlakropp
+C bönbok
+D skrivtecken
+E väggmålning
+6. strandsätta
+A överta
+B fullborda
+C misslyckas
+D säkerställa
+E överge
+5. surrogat
+A tillsats
+B ersättning
+C hjälpmedel
+D avvikelse
+E förmedling
+8. anseende
+A rykte
+B hållning
+C uttryck
+D karaktär
+E ståndpunkt
+7. katharsis
+A kraftprov
+B undergång
+C själslig rening
+D höjdpunkt
+E kärlekssorg
+9. perplex
+A häpen
+B envis
+C nyfiken
+D konstig
+E vaken
+10. utlöpare
+A undantag
+B sidogren
+C felbedömning
+D varning
+E framkant
 
 answers:
+A
 D
-C
-C
-C
-A
-A
-E
+D
 E
 B
+E
+C
+A
+A
 B
 type:
 ORD
 test:
-vår2021
+2021-03-13

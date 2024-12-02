@@ -2238,5 +2238,145 @@
     "type": "ORD",
     "additional_resources": null,
     "test": "vår2021"
+  },
+  {
+    "question_text": "ypperligt",
+    "answers": [
+      "uppenbart",
+      "typiskt",
+      "överdrivet",
+      "utmärkt",
+      "värdefullt"
+    ],
+    "correct_answer": 4,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "implicera",
+    "answers": [
+      "medföra",
+      "ställa upp",
+      "försvaga",
+      "hålla fast",
+      "undvika"
+    ],
+    "correct_answer": 1,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "initial",
+    "answers": [
+      "väl insatt",
+      "pådrivande",
+      "sammanhängande",
+      "verkningsfull",
+      "inledande"
+    ],
+    "correct_answer": 5,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "hieroglyf",
+    "answers": [
+      "gravsten",
+      "himlakropp",
+      "bönbok",
+      "skrivtecken",
+      "väggmålning"
+    ],
+    "correct_answer": 4,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "strandsätta",
+    "answers": [
+      "överta",
+      "fullborda",
+      "misslyckas",
+      "säkerställa",
+      "överge"
+    ],
+    "correct_answer": 5,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "surrogat",
+    "answers": [
+      "tillsats",
+      "ersättning",
+      "hjälpmedel",
+      "avvikelse",
+      "förmedling"
+    ],
+    "correct_answer": 2,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "anseende",
+    "answers": [
+      "rykte",
+      "hållning",
+      "uttryck",
+      "karaktär",
+      "ståndpunkt"
+    ],
+    "correct_answer": 1,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "katharsis",
+    "answers": [
+      "kraftprov",
+      "undergång",
+      "själslig rening",
+      "höjdpunkt",
+      "kärlekssorg"
+    ],
+    "correct_answer": 3,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "perplex",
+    "answers": [
+      "häpen",
+      "envis",
+      "nyfiken",
+      "konstig",
+      "vaken"
+    ],
+    "correct_answer": 1,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "utlöpare",
+    "answers": [
+      "undantag",
+      "sidogren",
+      "felbedömning",
+      "varning",
+      "framkant"
+    ],
+    "correct_answer": 2,
+    "type": "ORD",
+    "additional_resources": null,
+    "test": "2021-03-13"
   }
 ]
