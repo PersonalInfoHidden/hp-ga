@@ -1,0 +1,15 @@
+{
+    "name": "Hp-Skolan",
+    "short_name": "HP-Skolan",
+    "theme_color": "#fafafa",
+    "background_color": "#09090b",
+    "display": "standalone",
+    "orientation": "any",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        { "src": "/favicon-192.png", "type": "image/png", "sizes": "192x192" },
+        { "src": "/favicon-256.png", "type": "image/png", "sizes": "256x256" },
+        { "src": "/favicon-512.png", "type": "image/png", "sizes": "512x512" }
+    ]
+}

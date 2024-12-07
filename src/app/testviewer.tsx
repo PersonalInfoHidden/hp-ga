@@ -11,6 +11,7 @@ const avalibleTests = [
     { name: "Vår 2024", path: "test/spring24" },
 ];
 
+/*
 export const TestViewer = () => {
     return (
         <div className="bg-zinc-900  px-8 py-10 rounded-2xl border">
@@ -38,3 +39,4 @@ export const TestViewer = () => {
         </div>
     );
 };
+*/

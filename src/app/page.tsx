@@ -1,9 +1,11 @@
 import Image from "next/image";
 import React, { use } from "react";
+/*
 import { Links, NavBar } from "./navbar";
 import { TestViewer } from "./testviewer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
+*/
 import { createClient } from "@/utils/supabase/server";
 import { RandomViewer } from "./randomviewer";
 import { redirect } from "next/navigation";
