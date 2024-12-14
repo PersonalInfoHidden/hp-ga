@@ -1,76 +1,90 @@
-2. ypperligt
-A uppenbart
-B typiskt
-C överdrivet
-D utmärkt
-E värdefullt
-1. implicera
-A medföra
-B ställa upp
-C försvaga
-D hålla fast
-E undvika
-4. initial
-A väl insatt
-B pådrivande
-C sammanhängande
-D verkningsfull
-E inledande
-3. hieroglyf
-A gravsten
-B himlakropp
-C bönbok
-D skrivtecken
-E väggmålning
-6. strandsätta
-A överta
-B fullborda
-C misslyckas
-D säkerställa
-E överge
-5. surrogat
-A tillsats
-B ersättning
-C hjälpmedel
-D avvikelse
-E förmedling
-8. anseende
-A rykte
-B hållning
-C uttryck
-D karaktär
-E ståndpunkt
-7. katharsis
-A kraftprov
-B undergång
-C själslig rening
-D höjdpunkt
-E kärlekssorg
-9. perplex
-A häpen
-B envis
-C nyfiken
-D konstig
-E vaken
-10. utlöpare
-A undantag
-B sidogren
-C felbedömning
-D varning
-E framkant
+21. Forskarna intresserar sig för så kallade socialekologiska system, det vill säga
+system där människa och natur studeras som en _____ helhet. I fokus står
+systemens _____, alltså deras förmåga att klara av förändring och vidareutvecklas.
+A integrerad – resiliens
+B manipulativ – ambition
+C retorisk – modellering
+D kreativ – konkurrens
+22. Under det sena 1980- och tidiga 1990-talet såg man det som visades på tv just då,
+eller så såg man ingenting alls. Ett missat avsnitt kunde inte ses igen, vilket gjorde
+det närmast omöjligt att skapa de djupa, invecklade berättelser som _____ nutidens
+hyllade serier.
+A indikerar
+B rymmer
+C summerar
+D präglar
+23. Det blir lättare att _____ arbete och fritid om man själv får bestämma när arbetet
+ska utföras, men det finns också hälsorisker med ständig tillgänglighet. Kraven på
+_____ ser olika ut på olika arbetsplatser, och därför behövs det ett aktivt lokalt
+arbete för att _____ eventuella problem, hitta lösningar och komma överens på
+arbetsplatsen.
+A inkludera – närvaro – undanröja
+B separera – anpassning – dämpa
+C urskilja – flexibilitet – bemöta
+D kombinera – nåbarhet – identifiera
+24. Det är rimligt att anta att amningen, som är ett barns första och oftast positiva
+erfarenhet av mat och ätande, utgör grunden för en initial _____ mot fast föda.
+A skepsis
+B distans
+C influens
+D arrogans
+25. Olja, kol och gas måste bli kvar i marken, annars är klimatkollapsen ofrånkomlig.
+De båda forskarna diskuterar sakligt och prövande olika förslag på lösningar, till
+exempel utsläppstak som efterhand _____ för att en gradvis _____ av fossila
+bränslen ska bli möjlig.
+A säkras – avknoppning
+B sänks – utfasning
+C skärps – frånkoppling
+D släpps – inlagring
+26. Eftersom betyg i gymnasieskolan sätts efter varje avslutad kurs och många av
+dessa kurser är relativt korta kan undervisningen upplevas som _____, det vill
+säga att helheten går förlorad och att progressionen i lärandet blir svår att se.
+A abstrakt
+B omotiverad
+C ambivalent
+D fragmenterad
+27. Jag vill i detta sammanhang även passa på att rikta ett varmt tack till redaktören,
+som med _____ slagit ner på _____ formuleringar och andra oklarheter i texten.
+A järngrepp – betänksamma
+B falkblick – svävande
+C spjutspets – obestyrkta
+D glosögon – vankelmodiga
+28. För femtio år sedan _____ den totala mängden utestående krediter i USA till 3 000
+miljarder dollar. Idag är siffran 58 000 miljarder och stigande. Skuldbördan i USA har
+kommit att utvecklas till ett svårartat _____. Det har krävts en ständigt ökad _____
+av nya lån samtidigt som utväxlingen i form av ekonomisk tillväxt blivit allt svagare.
+A tilltog – dilemma – omfattning
+B sattes – komplex – kvantitet
+C uppgick – beroende – tillförsel
+D värderades – förlopp – nedskrivning
+29. _____ till våra tiders breda vaccinationsprogram är de smittkoppsepidemier
+som _____ i Europa under 1700-talet och dödade uppemot 60 miljoner människor.
+Många överlevande blev vanställda med fula koppärr och inte sällan blindhet
+som följd.
+A Tillkomsten – chockerade
+B Förstadiet – frapperade
+C Upprinnelsen – grasserade
+D Anslaget – frotterade
+30. Det är en historiens ironi att Sydeuropa nu verkar vara på väg tillbaka till sin
+klassiska roll i modern tid: som utvandrings- och gästarbetarregion. Bara de
+gamla och _____ blir kvar hemma.
+A anfäktade
+B bortklemade
+C umbärliga
+D klentrogna
 
 answers:
 A
 D
 D
-E
+A
 B
-E
+D
+B
 C
-A
-A
-B
+C
+C
 type:
-ORD
+MEK
 test:
 2021-03-13

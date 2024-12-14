@@ -2378,5 +2378,135 @@
     "type": "ORD",
     "additional_resources": null,
     "test": "2021-03-13"
+  },
+  {
+    "question_text": "Forskarna intresserar sig för så kallade socialekologiska system, det vill säga system där människa och natur studeras som en _____ helhet. I fokus står systemens _____, alltså deras förmåga att klara av förändring och vidareutvecklas.",
+    "answers": [
+      "integrerad – resiliens",
+      "manipulativ – ambition",
+      "retorisk – modellering",
+      "kreativ – konkurrens"
+    ],
+    "correct_answer": 1,
+    "type": "MEK",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "Under det sena 1980- och tidiga 1990-talet såg man det som visades på tv just då, eller så såg man ingenting alls. Ett missat avsnitt kunde inte ses igen, vilket gjorde det närmast omöjligt att skapa de djupa, invecklade berättelser som _____ nutidens hyllade serier.",
+    "answers": [
+      "indikerar",
+      "rymmer",
+      "summerar",
+      "präglar"
+    ],
+    "correct_answer": 4,
+    "type": "MEK",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "Det blir lättare att _____ arbete och fritid om man själv får bestämma när arbetet ska utföras, men det finns också hälsorisker med ständig tillgänglighet. Kraven på _____ ser olika ut på olika arbetsplatser, och därför behövs det ett aktivt lokalt arbete för att _____ eventuella problem, hitta lösningar och komma överens på arbetsplatsen.",
+    "answers": [
+      "inkludera – närvaro – undanröja",
+      "separera – anpassning – dämpa",
+      "urskilja – flexibilitet – bemöta",
+      "kombinera – nåbarhet – identifiera"
+    ],
+    "correct_answer": 4,
+    "type": "MEK",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "Det är rimligt att anta att amningen, som är ett barns första och oftast positiva erfarenhet av mat och ätande, utgör grunden för en initial _____ mot fast föda.",
+    "answers": [
+      "skepsis",
+      "distans",
+      "influens",
+      "arrogans"
+    ],
+    "correct_answer": 1,
+    "type": "MEK",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "Olja, kol och gas måste bli kvar i marken, annars är klimatkollapsen ofrånkomlig. De båda forskarna diskuterar sakligt och prövande olika förslag på lösningar, till exempel utsläppstak som efterhand _____ för att en gradvis _____ av fossila bränslen ska bli möjlig.",
+    "answers": [
+      "säkras – avknoppning",
+      "sänks – utfasning",
+      "skärps – frånkoppling",
+      "släpps – inlagring"
+    ],
+    "correct_answer": 2,
+    "type": "MEK",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "Eftersom betyg i gymnasieskolan sätts efter varje avslutad kurs och många av dessa kurser är relativt korta kan undervisningen upplevas som _____, det vill säga att helheten går förlorad och att progressionen i lärandet blir svår att se.",
+    "answers": [
+      "abstrakt",
+      "omotiverad",
+      "ambivalent",
+      "fragmenterad"
+    ],
+    "correct_answer": 4,
+    "type": "MEK",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "Jag vill i detta sammanhang även passa på att rikta ett varmt tack till redaktören, som med _____ slagit ner på _____ formuleringar och andra oklarheter i texten.",
+    "answers": [
+      "järngrepp – betänksamma",
+      "falkblick – svävande",
+      "spjutspets – obestyrkta",
+      "glosögon – vankelmodiga"
+    ],
+    "correct_answer": 2,
+    "type": "MEK",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "För femtio år sedan _____ den totala mängden utestående krediter i USA till 3 000 miljarder dollar. Idag är siffran 58 000 miljarder och stigande. Skuldbördan i USA har kommit att utvecklas till ett svårartat _____. Det har krävts en ständigt ökad _____ av nya lån samtidigt som utväxlingen i form av ekonomisk tillväxt blivit allt svagare.",
+    "answers": [
+      "tilltog – dilemma – omfattning",
+      "sattes – komplex – kvantitet",
+      "uppgick – beroende – tillförsel",
+      "värderades – förlopp – nedskrivning"
+    ],
+    "correct_answer": 3,
+    "type": "MEK",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "_____ till våra tiders breda vaccinationsprogram är de smittkoppsepidemier som _____ i Europa under 1700-talet och dödade uppemot 60 miljoner människor. Många överlevande blev vanställda med fula koppärr och inte sällan blindhet som följd.",
+    "answers": [
+      "Tillkomsten – chockerade",
+      "Förstadiet – frapperade",
+      "Upprinnelsen – grasserade",
+      "Anslaget – frotterade"
+    ],
+    "correct_answer": 3,
+    "type": "MEK",
+    "additional_resources": null,
+    "test": "2021-03-13"
+  },
+  {
+    "question_text": "Det är en historiens ironi att Sydeuropa nu verkar vara på väg tillbaka till sin klassiska roll i modern tid: som utvandrings- och gästarbetarregion. Bara de gamla och _____ blir kvar hemma.",
+    "answers": [
+      "anfäktade",
+      "bortklemade",
+      "umbärliga",
+      "klentrogna"
+    ],
+    "correct_answer": 3,
+    "type": "MEK",
+    "additional_resources": null,
+    "test": "2021-03-13"
   }
 ]
