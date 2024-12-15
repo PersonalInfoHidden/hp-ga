@@ -1,12 +1,9 @@
 import Image from "next/image";
 import React, { use } from "react";
-import { Links, NavBar } from "./navbar";
-import { TestViewer } from "./testviewer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import { createClient } from "@/utils/supabase/server";
-import { RandomViewer } from "./randomviewer";
-import Favicon from "./favicon.ico";
+import Favicon from "./../../favicon.ico";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTree } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -18,13 +15,7 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const ExampleComponent = ({ children }: { children?: React.ReactNode }) => {
-    return <div>{children}</div>;
-};
-
-const testCategorys: Array<{ name: string; path: string; key: number }> = [
-    { name: "xyz", path: "/random/xyz", key: 0 },
-];
+const tests = ["2024", "2023"];
 
 export default async function Home() {
     const supabase = createClient();
@@ -65,25 +56,11 @@ export default async function Home() {
                 <span>Vad vill du pluga på nu?</span>
             </div>
             <div className="py-10 grid grid-flow-row gap-y-8  ">
-                <div className="bg-violet-300 rounded-lg py-8 px-6 shadow">
-                    <div className="font-medium text-lg">Svenska</div>
-                    <div>Verbala delen</div>
-                </div>
-                <div className="bg-orange-300 rounded-lg py-8 px-6 shadow">
-                    <div className="font-medium text-lg">Matematik</div>
-                    <div>Kognetiva Delen</div>
-                </div>
-                <Link
-                    href={"./test/verb"}
-                    className="bg-cyan-300 rounded-lg py-8 px-6 shadow"
-                >
-                    <div className="font-medium text-lg">Delprov Verbalt</div>
-                    <div>Gör ett delprov på den verbala delen SVE</div>
-                </Link>
-                <div className="bg-pink-300 rounded-lg py-8 px-6 shadow">
-                    <div className="font-medium text-lg">Delprov Kognetiv</div>
-                    <div>Gör ett delprov på den kognetiva delen XYZ</div>
-                </div>
+                {tests.map((value) => (
+                    <div className="bg-cyan-300 rounded-lg py-8 px-6 shadow">
+                        <div className="font-medium text-lg">{value}</div>
+                    </div>
+                ))}
             </div>
             <div className="">
                 <div className="bg-white shadow-lg flex justify-between px-8">
@@ -96,8 +73,4 @@ export default async function Home() {
             </div>
         </main>
     );
-}
-
-function Recents({ session }: { session: boolean }) {
-    return <></>;
 }
