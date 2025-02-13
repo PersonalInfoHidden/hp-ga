@@ -19,7 +19,10 @@ export const TestViewer = () => {
             </div>
             <div className="grid grid-cols-1  justify-around">
                 {avalibleTests.map((value) => (
-                    <div className="grid grid-cols-4 hover:bg-secondary p-2">
+                    <div
+                        className="grid grid-cols-4 hover:bg-secondary p-2"
+                        key={value.path}
+                    >
                         <div className="leading-loose  pr-6 ">
                             <Link href={value.path}>{value.name}</Link>
                         </div>

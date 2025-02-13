@@ -57,7 +57,10 @@ export default async function Home() {
             </div>
             <div className="py-10 grid grid-flow-row gap-y-8  ">
                 {tests.map((value) => (
-                    <div className="bg-cyan-300 rounded-lg py-8 px-6 shadow">
+                    <div
+                        className="bg-cyan-300 rounded-lg py-8 px-6 shadow"
+                        key={value}
+                    >
                         <div className="font-medium text-lg">{value}</div>
                     </div>
                 ))}
