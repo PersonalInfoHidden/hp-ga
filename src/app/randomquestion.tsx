@@ -57,7 +57,7 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
                         <label
                             className={`block h-full border-2 border-primary-foreground py-4 rounded-lg  has-[:checked]:bg-primary-foreground  ${
                                 correctlyAnswered === AnswerState.Correct
-                                    ? "has-[:checked]:border-green-600  has-[:checked]:scale-105 transition-transform duration-200 ease-out  has-[:checked]:text-green-200 has-[:checked]:font-bold text-muted"
+                                    ? "has-[:checked]:border-green-600  has-[:checked]:scale-105 transition-transform duration-200 ease-out  has-[:checked]:text-green-600 has-[:checked]:font-bold text-bold"
                                     : correctlyAnswered ===
                                       AnswerState.Incorrect
                                     ? "has-[:checked]:border-red-600"
@@ -89,7 +89,7 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
             <div className="col-span-2 py-2 grid place-items-center">
                 <button
                     type="submit"
-                    className="uppercase text-lg bg-amber-500 py-4 font-semibold border-4 border-amber-200 mx-3 my-2 w-11/12 rounded-lg hover:bg-amber-400 hover:border-amber-600 "
+                    className="uppercase text-lg bg-blue-500 py-4 font-semibold border-4 border-blue-200 mx-3 my-2 w-11/12 rounded-lg hover:bg-blue-400 hover:border-blue-600 "
                     onClick={() => {
                         setLockedAnswer(true);
 
@@ -125,7 +125,7 @@ const RandomQuestions = ({ questions }: { questions: HPQuestion[] }) => {
                         setCorrectlyAnswered(AnswerState.Incomplete);
                         setLockedAnswer(false);
                     }}
-                    className="uppercase text-lg bg-amber-500 py-4 font-semibold border-4 border-amber-200 mx-3 my-2 w-11/12 rounded-lg hover:bg-amber-400 hover:border-amber-600 "
+                    className="uppercase text-lg bg-pink-500 py-4 font-semibold border-4 border-pink-200 mx-3 my-2 w-11/12 rounded-lg hover:bg-pink-400 hover:border-pink-600 "
                 >
                     Next
                 </button>

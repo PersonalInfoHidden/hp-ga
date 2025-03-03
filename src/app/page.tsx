@@ -64,7 +64,15 @@ export default async function Home() {
             <div className="mb-4">
                 <span>Vad vill du pluga på nu?</span>
             </div>
+
             <div className="py-10 grid grid-flow-row gap-y-8  ">
+                <Link
+                    href={"./random/verb"}
+                    className="bg-pink-300 rounded-lg py-8 px-6 shadow"
+                >
+                    <div className="font-medium text-lg">Slump</div>
+                    <div>Lite slumpidump</div>
+                </Link>
                 <div className="bg-violet-300 rounded-lg py-8 px-6 shadow">
                     <div className="font-medium text-lg">Svenska</div>
                     <div>Verbala delen</div>

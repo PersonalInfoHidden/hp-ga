@@ -27,6 +27,11 @@ const Page = async () => {
 
     return (
         <div>
+            <h1 className="text-3xl my-4">Verbal Slump</h1>
+            <hr
+                className="border-none h-1 mx-4
+             bg-black rounded   mb-5"
+            ></hr>
             <RandomQuestions questions={questions} />
         </div>
     );
